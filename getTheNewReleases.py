@@ -1,4 +1,7 @@
+import base64
 import concurrent.futures
+import urllib
+
 import requests
 from bs4 import BeautifulSoup
 import datetime
@@ -12,18 +15,29 @@ months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", 
 newReleases = []
 
 
-class Book():
+class Book:
     author = ""
     title = ""
     date = ""
     genre = ""
+    tags = []
+    pages = ""
+    isbn = ""
+    cover = ""
+    synopsis = ""
 
-    def construct(self, a, t, d, g):
-        author = a
-        title = t
-        date = d
-        genre = g
-        return self
+    def __init__(self, a, t, d, g, s, i, c, ts, p):
+        a = a.split(",")
+        self.author = a
+        self.title = t
+        self.date = d
+        self.genre = g
+        self.synopsis = s
+        self.isbn = i
+        self.cover = c
+        self.tags = ts
+        self.pages = p
+
 
 
 def getBooksForTheMonth(month):
@@ -45,15 +59,36 @@ def getBooksForTheMonth(month):
         books = table.find_all("tr")
         for b in books:
             try:
-                book = Book().construct(b.find(attrs={'itemprop': 'author'}).get_text(),
-                                        b.find(attrs={'itemprop': 'name'}).get_text(),
-                                        b.find(attrs={'itemprop': 'datePublished'}).get_text(),
-                                        b.find(attrs={'itemprop': 'genre'}).get_text())
+                headers = {'Cookie': 'fdbid=284863; fdbunm=thevhssideshow; fdblvl=0; PHPSESSID=eiitv91qsbjaa4l9dmmj5j4k17'}
+
+                book_html = requests.get("https://www.fictiondb.com"+(b.find("a", itemprop="url")['href']).replace("..",""), headers = headers)
+                book_soup = BeautifulSoup(book_html.content, 'html.parser')
+                image_url = book_soup.find("meta", property="og:image")["content"]
+
+                if "NoCover" in image_url:
+                    image = ""
+                else:
+                    image = base64.b64encode(requests.get(image_url).content).decode("utf-8")
+
+                try:
+                    page = book_soup.find(string="Pages:").findParent("li").find("div").get_text().strip()
+                except:
+                    page = ""
+
+                book = Book(b.find("a", itemprop = 'author').get_text(),
+                            b.find("span", itemprop = 'name').get_text(),
+                            b.find("span", itemprop = 'datePublished').get_text(),
+                            b.find("span", itemprop = 'genre').get_text().strip().strip("/").strip(),
+                            book_soup.find("div",id="description").get_text().strip(),
+                            book_soup.find("meta", property="book:isbn")["content"],
+                            image,
+                            [g.get_text() for g in book_soup.find("div",class_="col-sm-4 col-md-4").find_all("a")],
+                            page)
+
                 print(book.__dict__)
                 newReleases.append(book)
-            except:
-                print("oops")
-
+            except Exception as e:
+                print(e)
 
 for m in months:
     getBooksForTheMonth(m)
