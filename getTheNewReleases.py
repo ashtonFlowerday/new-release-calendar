@@ -1,5 +1,6 @@
 import base64
 import json
+import re
 
 import requests
 from bs4 import BeautifulSoup
@@ -45,13 +46,72 @@ class Author:
     bio = ""
     name = ""
     id = ""
-def goodreads_scrape(book):
+
+    def __init__(self,p,b,n):
+        self.photo = p
+        self.bio = b
+        self.name = n
+
+def author_goodreads_scrape(book):
+    logger.info("Goodreads author scrape")
     html = requests.get("https://www.goodreads.com/search?q="+book.isbn)
     soup = BeautifulSoup(html.content, 'html.parser')
-
+    authors_links = soup.find(class_="ContributorLinksList").find_all("a")
+    try:
+        authors = []
+        for i in range(0, len(authors_links)):
+            author_html = requests.get(i["href"])
+            author_soup = BeautifulSoup(author_html.content, 'html.parser')
+            image = base64.b64encode(requests.get(author_soup.find(class_="authorPhoto")["src"]).content).decode("utf-8")
+            authors.append(Author(image, author_soup.find(class_="fullContent"),author_soup.find("authorName").get_text()))
+        book.author = authors
+    except Exception as e:
+        logger.error(e)
+        return author_amazon_scrape(book)
     return book
 
-def amazon_scrape(book):
+def author_amazon_scrape(book):
+    logger.info("Amazon author scrape")
+    html = requests.get("https://www.amazon.com/s?k="+book.isbn)
+    soup = BeautifulSoup(html.content, 'html.parser')
+    try:
+        book_html=requests.get(soup.find(class_="a-link-normal s-faceout-link a-text-normal")["href"])
+        book_soup = BeautifulSoup(book_html.content, 'html.parser')
+        author_links = book_soup.find_all(class_="bylineContributor")
+        authors = []
+        for i in author_links:
+            author_html=requests.get(i["href"])
+            author_soup = BeautifulSoup(author_html.content, 'html.parser')
+            author_html = requests.get(author_soup.select_one('[data-testid="product-brand"]')["href"])
+            author_soup = BeautifulSoup(author_html.content, 'html.parser')
+            image = base64.b64encode(requests.get(author_soup.find(class_="AuthorBio__author-bio__author-picture__hz4cs").find("img")["href"]).content).decode("utf-8")
+            authors.append(Author(image, author_soup.find(class_="AuthorBio__author-bio__author-biography__WeqwH").get_text(),author_soup.find(class_="AuthorSubHeader__author-subheader__name__HkJyX").get_text()))
+
+        book.author = authors
+    except Exception as e:
+        logger.error(e)
+    return book
+
+def author_google_books_scrape(book, id):
+    logger.info("Google Books author scrape")
+    title = re.sub(r'\W+', '',book.title).replace(" ","_")
+    html = requests.get("https://www.google.co.za/books/edition/"+title+"/"+id+"?hl=en")
+    soup = BeautifulSoup(html.content, 'html.parser')
+    try:
+        author_names = soup.find_all(class_ = "U7rXJc")
+        author_bios = soup.find_all(class_ = "qO5zb")
+        author_photos = soup.find_all(class_="IXgIFd")
+        authors = []
+
+        for i in range(0,len(author_names)):
+            image = base64.b64encode(requests.get(author_photos[i].find("a")["href"]).content).decode("utf-8")
+            authors.append(Author(image,author_bios[i].get_text(),author_names[i].get_text()))
+
+        book.author = authors
+
+    except Exception as e:
+        logger.error(e)
+        return author_goodreads_scrape(book)
     return book
 
 def google_books_api(book):
@@ -60,6 +120,7 @@ def google_books_api(book):
     book.publisher = book_details["items"][0]["volumeInfo"]["publisher"]
     for i in book_details["items"][0]["volumeInfo"]["categories"]:
         book.tags.append(i)
+    author_google_books_scrape(book,book_details["items"][0]["id"])
     return book
 
 def get_books_for_the_month(month):

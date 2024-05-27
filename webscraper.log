@@ -1,0 +1,320 @@
+INFO:__main__:Jan 2024 has 16 pages of new releases
+INFO:__main__:Scraping year and month: Jan 2024
+INFO:__main__:Scraping page: 1
+INFO:__main__:Scraping of book table complete!
+ERROR:__main__:'NoneType' object is not subscriptable
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Jan 2024 has 16 pages of new releases
+INFO:__main__:Scraping year and month: Jan 2024
+INFO:__main__:Scraping page: 1
+INFO:__main__:Scraping of book table complete!
+ERROR:__main__:'NoneType' object is not subscriptable
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'items'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'items'
+ERROR:__main__:'NoneType' object is not subscriptable
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'items'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+WARNING:__main__:No cover found!
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+ERROR:__main__:'NoneType' object is not subscriptable
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Jan 2024 has 16 pages of new releases
+INFO:__main__:Scraping year and month: Jan 2024
+INFO:__main__:Scraping page: 1
+INFO:__main__:Scraping of book table complete!
+ERROR:__main__:'NoneType' object is not subscriptable
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'items'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publishedDate'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Jan 2024 has 16 pages of new releases
+INFO:__main__:Scraping year and month: Jan 2024
+INFO:__main__:Scraping page: 1
+INFO:__main__:Scraping of book table complete!
+ERROR:__main__:'NoneType' object is not subscriptable
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+ERROR:__main__:'publisher'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'categories'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'categories'
+INFO:__main__:Getting cover image of book
+ERROR:__main__:Something went wrong with the book cover!
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'categories'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'items'
+INFO:__main__:Jan 2024 has 16 pages of new releases
+INFO:__main__:Scraping year and month: Jan 2024
+INFO:__main__:Scraping page: 1
+INFO:__main__:Scraping of book table complete!
+ERROR:__main__:'NoneType' object is not subscriptable
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+ERROR:__main__:'publisher'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'categories'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'categories'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'items'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+ERROR:__main__:'categories'
+INFO:__main__:Getting cover image of book
+ERROR:__main__:Something went wrong with the book cover!
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'NoneType' object is not subscriptable
+INFO:__main__:Jan 2024 has 16 pages of new releases
+INFO:__main__:Scraping year and month: Jan 2024
+INFO:__main__:Scraping page: 1
+INFO:__main__:Jan 2024 has 16 pages of new releases
+INFO:__main__:Scraping year and month: Jan 2024
+INFO:__main__:Scraping page: 1
+INFO:__main__:Scraping of book table complete!
+ERROR:__main__:'NoneType' object is not subscriptable
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Google Books author scrape
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Google Books author scrape
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+ERROR:__main__:'publisher'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Google Books author scrape
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Google Books author scrape
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'items'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'categories'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'categories'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'categories'
+ERROR:__main__:'NoneType' object is not subscriptable
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'items'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+ERROR:__main__:'categories'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+ERROR:__main__:'publisher'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+INFO:__main__:Google Books author scrape
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'categories'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'categories'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+WARNING:__main__:No number of pages found!
+ERROR:__main__:'publisher'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publisher'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'categories'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publisher'
+INFO:__main__:Getting cover image of book
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'categories'
+INFO:__main__:Getting cover image of book
+ERROR:__main__:Something went wrong with the book cover!
+INFO:__main__:Getting number of pages of book
+ERROR:__main__:'publisher'
