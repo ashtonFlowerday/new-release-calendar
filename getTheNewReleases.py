@@ -51,9 +51,8 @@ class Author:
     photo = ""
     bio = ""
     name = ""
-    additional_info=[]
+    personal_website = ""
     goodreads_link = ""
-    amazon_link = ""
 
     def __init__(self,p,b,n):
         self.photo = p
@@ -80,83 +79,63 @@ def author_goodreads_scrape(book):
             author_browser.get(authors_links[i]["href"])
             author_soup = BeautifulSoup(author_browser.page_source, 'html.parser')
             author_name = author_soup.find("h1", {"class": "authorName"}).find("span").get_text()
-            author = next(author for author in book.author if author.name == author_name)
+            author = None
+            try:
+                author = next(author for author in book.author if author.name == author_name)
+            except Exception as e:
+                logger.error(e)
             if author!= None:
                 int = book.author.index(author)
-                bio = author_soup.find("div", {"class": "aboutAuthorInfo"}).find("span",{"style": "display:none"}).get_text()
-                photo = author_soup.find("img", {"alt": author_name})["src"]
+                bio = ""
+                photo = ""
+                try:
+                    bio = author_soup.find("div", {"class": "aboutAuthorInfo"}).find("span",{"style": "display:none"}).get_text()
+                except Exception as e:
+                    logger.error(str(datetime.datetime.now())+" "+str(e))
+                try:
+                    photo = author_soup.find("img", {"alt": author_name})["src"]
+                except Exception as e:
+                    logger.error(str(datetime.datetime.now())+" "+str(e))
                 if len(author.bio)<len(bio):
+                    logger.info("New author bio added")
                     author.bio = bio
-                if len(author.photo)<len(photo):
+                if len(author.photo)<len(photo) and "https://s.gr-assets.com/assets/nophoto/" not in photo:
+                    logger.info("New author photo added")
                     author.photo = photo
-                additional_titles = author_soup.find_all("div", {"class": "dataTitle"})
-                additional_items = author_soup.find_all("div", {"class": "dataItem"})
-                for j in range(0, len(additional_titles)):
-                    if "href" in additional_items[j]:
-                        author.additional_info[j] = {additional_titles[j].get_text():additional_items[j].find("a")["href"]}
-                    else:
-                        author.additional_info[j] = {additional_titles[j].get_text():re.sub('<[^>]+>', '',additional_items[j].get_text().strip().strip("\n"))}
+                try:
+                    websites = author_soup.find_all("a", {"itemprop": "url"})
+                    for j in range(0, len(websites)):
+                        if "twitter" or "instagram" or "goodreads" or "/book/show" not in websites[j]["href"]:
+                            author.personal_website = websites[j]["href"]
+                except Exception as e:
+                    logger.error(str(datetime.datetime.now())+" "+str(e))
+                author.goodreads_link = authors_links[i]["href"]
                 book.author[int] = author
-                return book
             else:
-                bio = author_soup.find("div", {"class": "aboutAuthorInfo"}).find("span",{"style": "display:none"}).get_text()
-                photo = author_soup.find("img", {"alt": author_name})["src"]
-                additional_titles = author_soup.find_all("div", {"class": "dataTitle"})
-                additional_items = author_soup.find_all("div", {"class": "dataItem"})
+                bio = ""
+                photo = ""
+                try:
+                    bio = author_soup.find("div", {"class": "aboutAuthorInfo"}).find("span",{"style": "display:none"}).get_text()
+                except Exception as e:
+                    logger.error(str(datetime.datetime.now())+" "+str(e))
+                try:
+                    photo = author_soup.find("img", {"alt": author_name})["src"]
+                except Exception as e:
+                    logger.error(str(datetime.datetime.now())+" "+str(e))
                 a = Author(photo,bio,author_name)
-                for j in range(0, len(additional_titles)):
-                    if "href" in additional_items[j]:
-                        print({additional_titles[j].get_text():additional_items[j].find("a")["href"]})
-                        a.additional_info[j] = {additional_titles[j].get_text():additional_items[j].find("a")["href"]}
-                    else:
-                        print({additional_titles[j].get_text():re.sub('<[^>]+>', '',additional_items[j].get_text())})
-                        a.additional_info[j] = {additional_titles[j].get_text():re.sub('<[^>]+>', '',additional_items[j].get_text().strip().strip("\n"))}
+                try:
+                    websites = author_soup.find_all("a", {"itemprop": "url"})
+                    for j in range(0, len(websites)):
+                        if "twitter" or "instagram" or "goodreads" or "/book/show" not in websites[j]["href"]:
+                            a.personal_website = websites[j]["href"]
+                except Exception as e:
+                    logger.error(str(datetime.datetime.now())+" "+str(e))
+                a.goodreads_link = authors_links[i]["href"]
                 book.author.append(a)
-                print(book.author.__dict__)
-                return book
-
-
-
-    # except Exception as e:
-    #     logger.error(e)
-    #     return author_amazon_scrape(book)
+    print(book.__dict__)
+    for i in book.author:
+        print(i.__dict__)
     return book
-
-# def author_amazon_scrape(book):
-#     logger.info("Amazon author scrape")
-#     brave_path = "C:\\Program Files\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
-#     option = webdriver.ChromeOptions()
-#     option.binary_location = brave_path
-#     option.add_argument("--window-size=1920,1080")
-#     option.add_argument("--headless")
-#     option.add_argument("--disable-gpu")
-#     option.add_argument(
-#     "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36")
-#     browser = webdriver.Chrome(options=option)
-#     browser.get("https://www.amazon.com/s?k="+book.isbn)
-#     soup = BeautifulSoup(browser.page_source, 'html.parser')
-#     print("https://www.amazon.com/s?k="+book.isbn)
-#     print(soup)
-#     try:
-#         print(soup.find(class_="a-link-normal s-faceout-link a-text-normal"))
-#         book_html=requests.get(soup.find(class_="a-link-normal s-faceout-link a-text-normal")["href"])
-#         print(book_html)
-#         book_soup = BeautifulSoup(book_html.content, 'html.parser')
-#         author_links = book_soup.find_all(class_="bylineContributor")
-#         authors = []
-#         for i in author_links:
-#             print(i)
-#             author_html=requests.get(i["href"])
-#             author_soup = BeautifulSoup(author_html.content, 'html.parser')
-#             author_html = requests.get(author_soup.select_one('[data-testid="product-brand"]')["href"])
-#             author_soup = BeautifulSoup(author_html.content, 'html.parser')
-#             image = base64.b64encode(requests.get(author_soup.find(class_="AuthorBio__author-bio__author-picture__hz4cs").find("img")["href"]).content).decode("utf-8")
-#             authors.append(Author(image, author_soup.find(class_="AuthorBio__author-bio__author-biography__WeqwH").get_text(),author_soup.find(class_="AuthorSubHeader__author-subheader__name__HkJyX").get_text()))
-#
-#         book.author = authors
-#     except Exception as e:
-#         logger.error(e)
-#return book
 
 def author_google_books_scrape(book, id):
     logger.info(str(datetime.datetime.now())+" "+"Google Books author scrape")
@@ -263,6 +242,9 @@ def get_books_for_the_month(month):
                             cover_image,
                             [g.get_text() for g in book_soup.find("div",class_="col-sm-4 col-md-4").find_all("a")],
                             pages)
+
+                book.goodreads_link = "https://www.goodreads.com/search?utf8=%E2%9C%93&query="+book.isbn
+                book.amazon_link = "https://www.amazon.com/s?k="+book.isbn
 
                 book = google_books_api(book)
 

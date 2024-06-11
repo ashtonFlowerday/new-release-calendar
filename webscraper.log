@@ -1,320 +1,162 @@
-INFO:__main__:Jan 2024 has 16 pages of new releases
-INFO:__main__:Scraping year and month: Jan 2024
-INFO:__main__:Scraping page: 1
-INFO:__main__:Scraping of book table complete!
-ERROR:__main__:'NoneType' object is not subscriptable
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Jan 2024 has 16 pages of new releases
-INFO:__main__:Scraping year and month: Jan 2024
-INFO:__main__:Scraping page: 1
-INFO:__main__:Scraping of book table complete!
-ERROR:__main__:'NoneType' object is not subscriptable
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'items'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'items'
-ERROR:__main__:'NoneType' object is not subscriptable
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'items'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-WARNING:__main__:No cover found!
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-ERROR:__main__:'NoneType' object is not subscriptable
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Jan 2024 has 16 pages of new releases
-INFO:__main__:Scraping year and month: Jan 2024
-INFO:__main__:Scraping page: 1
-INFO:__main__:Scraping of book table complete!
-ERROR:__main__:'NoneType' object is not subscriptable
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'items'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publishedDate'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Jan 2024 has 16 pages of new releases
-INFO:__main__:Scraping year and month: Jan 2024
-INFO:__main__:Scraping page: 1
-INFO:__main__:Scraping of book table complete!
-ERROR:__main__:'NoneType' object is not subscriptable
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-ERROR:__main__:'publisher'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'categories'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'categories'
-INFO:__main__:Getting cover image of book
-ERROR:__main__:Something went wrong with the book cover!
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'categories'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'items'
-INFO:__main__:Jan 2024 has 16 pages of new releases
-INFO:__main__:Scraping year and month: Jan 2024
-INFO:__main__:Scraping page: 1
-INFO:__main__:Scraping of book table complete!
-ERROR:__main__:'NoneType' object is not subscriptable
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-ERROR:__main__:'publisher'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'categories'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'categories'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'items'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-ERROR:__main__:'categories'
-INFO:__main__:Getting cover image of book
-ERROR:__main__:Something went wrong with the book cover!
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'NoneType' object is not subscriptable
-INFO:__main__:Jan 2024 has 16 pages of new releases
-INFO:__main__:Scraping year and month: Jan 2024
-INFO:__main__:Scraping page: 1
-INFO:__main__:Jan 2024 has 16 pages of new releases
-INFO:__main__:Scraping year and month: Jan 2024
-INFO:__main__:Scraping page: 1
-INFO:__main__:Scraping of book table complete!
-ERROR:__main__:'NoneType' object is not subscriptable
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Google Books author scrape
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Google Books author scrape
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-ERROR:__main__:'publisher'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Google Books author scrape
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Google Books author scrape
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'items'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'categories'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'categories'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'categories'
-ERROR:__main__:'NoneType' object is not subscriptable
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'items'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-ERROR:__main__:'categories'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-ERROR:__main__:'publisher'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-INFO:__main__:Google Books author scrape
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'categories'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'categories'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-WARNING:__main__:No number of pages found!
-ERROR:__main__:'publisher'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publisher'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'categories'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publisher'
-INFO:__main__:Getting cover image of book
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'categories'
-INFO:__main__:Getting cover image of book
-ERROR:__main__:Something went wrong with the book cover!
-INFO:__main__:Getting number of pages of book
-ERROR:__main__:'publisher'
+INFO:__main__:2024-06-11 11:04:17.378524 Jan 2024 has 16 pages of new releases
+INFO:__main__:2024-06-11 11:04:17.378524 Scraping year and month: Jan 2024
+INFO:__main__:2024-06-11 11:04:17.378524 Scraping page: 1
+INFO:__main__:2024-06-11 11:04:47.576502 Scraping of book table complete!
+ERROR:__main__:2024-06-11 11:04:47.576502 'NoneType' object is not subscriptable
+INFO:__main__:2024-06-11 11:04:48.731515 Getting cover image of book
+INFO:__main__:2024-06-11 11:04:50.094535 Getting number of pages of book
+INFO:__main__:2024-06-11 11:04:50.765537 Google Books author scrape
+INFO:__main__:2024-06-11 11:04:54.401799 Attempting to get author image
+ERROR:__main__:2024-06-11 11:04:54.402800 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 11:04:54.402800 Attempting to get author image
+ERROR:__main__:2024-06-11 11:04:54.402800 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:04:54.402800 list index out of range
+INFO:__main__:2024-06-11 11:04:56.428848 Goodreads author scrape
+ERROR:__main__:2024-06-11 11:05:12.681621 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+ERROR:__main__:
+ERROR:__main__:2024-06-11 11:05:19.033634 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 11:05:24.218657 Getting cover image of book
+INFO:__main__:2024-06-11 11:05:25.588614 Getting number of pages of book
+INFO:__main__:2024-06-11 11:05:26.246119 Google Books author scrape
+INFO:__main__:2024-06-11 11:05:30.072130 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 11:05:31.680130 Attempting to get author image
+ERROR:__main__:2024-06-11 11:05:31.680130 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:05:31.681131 list index out of range
+INFO:__main__:2024-06-11 11:05:33.705616 Goodreads author scrape
+INFO:__main__:New author bio added
+ERROR:__main__:
+ERROR:__main__:2024-06-11 11:05:55.775030 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 11:06:02.450044 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 11:06:07.656618 Getting cover image of book
+INFO:__main__:2024-06-11 11:06:08.770618 Getting number of pages of book
+WARNING:__main__:2024-06-11 11:06:08.772615 No number of pages found!
+ERROR:__main__:2024-06-11 11:06:09.404617 'publisher'
+INFO:__main__:2024-06-11 11:06:09.404617 Google Books author scrape
+INFO:__main__:2024-06-11 11:06:12.507905 Attempting to get author image
+ERROR:__main__:2024-06-11 11:06:12.507905 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:06:12.507905 list index out of range
+INFO:__main__:2024-06-11 11:06:12.507905 Attempting to get author image
+ERROR:__main__:2024-06-11 11:06:12.508906 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:06:12.508906 list index out of range
+INFO:__main__:2024-06-11 11:06:14.546902 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 11:06:29.539542 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 11:06:34.732952 Getting cover image of book
+INFO:__main__:2024-06-11 11:06:36.080950 Getting number of pages of book
+INFO:__main__:2024-06-11 11:06:36.756950 Google Books author scrape
+INFO:__main__:2024-06-11 11:06:40.300948 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 11:06:41.298947 Attempting to get author image
+ERROR:__main__:2024-06-11 11:06:41.298947 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:06:41.298947 list index out of range
+INFO:__main__:2024-06-11 11:06:43.345961 Goodreads author scrape
+ERROR:__main__:2024-06-11 11:06:59.060418 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 11:07:04.023949 Getting cover image of book
+INFO:__main__:2024-06-11 11:07:05.121948 Getting number of pages of book
+ERROR:__main__:2024-06-11 11:07:05.786951 'categories'
+INFO:__main__:2024-06-11 11:07:05.786951 Google Books author scrape
+INFO:__main__:2024-06-11 11:07:09.408948 Attempting to get author image
+ERROR:__main__:2024-06-11 11:07:09.408948 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:07:09.408948 list index out of range
+INFO:__main__:2024-06-11 11:07:09.408948 Attempting to get author image
+ERROR:__main__:2024-06-11 11:07:09.408948 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:07:09.408948 list index out of range
+INFO:__main__:2024-06-11 11:07:11.431971 Goodreads author scrape
+ERROR:__main__:2024-06-11 11:07:25.685536 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 11:07:31.629059 Getting cover image of book
+INFO:__main__:2024-06-11 11:07:32.752058 Getting number of pages of book
+ERROR:__main__:2024-06-11 11:07:33.357070 'items'
+ERROR:__main__:2024-06-11 11:07:33.357070 'items'
+INFO:__main__:2024-06-11 11:07:34.213073 Getting cover image of book
+INFO:__main__:2024-06-11 11:07:35.326492 Getting number of pages of book
+WARNING:__main__:2024-06-11 11:07:35.328489 No number of pages found!
+ERROR:__main__:2024-06-11 11:07:35.987489 'categories'
+INFO:__main__:2024-06-11 11:07:35.987489 Google Books author scrape
+INFO:__main__:2024-06-11 11:07:39.121492 Attempting to get author image
+ERROR:__main__:2024-06-11 11:07:39.122491 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:07:39.122491 list index out of range
+INFO:__main__:2024-06-11 11:07:39.122491 Attempting to get author image
+ERROR:__main__:2024-06-11 11:07:39.122491 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:07:39.122491 list index out of range
+INFO:__main__:2024-06-11 11:07:41.162991 Goodreads author scrape
+ERROR:__main__:2024-06-11 11:07:56.574838 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 11:08:02.530556 Getting cover image of book
+INFO:__main__:2024-06-11 11:08:03.615557 Getting number of pages of book
+INFO:__main__:2024-06-11 11:08:04.311557 Google Books author scrape
+INFO:__main__:2024-06-11 11:08:07.927596 Attempting to get author image
+ERROR:__main__:2024-06-11 11:08:07.927596 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:08:07.927596 list index out of range
+INFO:__main__:2024-06-11 11:08:07.927596 Attempting to get author image
+ERROR:__main__:2024-06-11 11:08:07.927596 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:08:07.927596 list index out of range
+INFO:__main__:2024-06-11 11:08:09.970606 Goodreads author scrape
+ERROR:__main__:2024-06-11 11:08:25.288117 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 11:08:31.314727 Getting cover image of book
+INFO:__main__:2024-06-11 11:08:32.404728 Getting number of pages of book
+ERROR:__main__:2024-06-11 11:08:33.023739 'items'
+ERROR:__main__:2024-06-11 11:08:33.023739 'items'
+ERROR:__main__:2024-06-11 11:08:33.023739 'NoneType' object is not subscriptable
+INFO:__main__:2024-06-11 11:08:33.876738 Getting cover image of book
+INFO:__main__:2024-06-11 11:08:34.995739 Getting number of pages of book
+ERROR:__main__:2024-06-11 11:08:35.643755 'categories'
+INFO:__main__:2024-06-11 11:08:35.643755 Google Books author scrape
+INFO:__main__:2024-06-11 11:08:39.380779 Attempting to get author image
+ERROR:__main__:2024-06-11 11:08:39.380779 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:08:39.380779 list index out of range
+INFO:__main__:2024-06-11 11:08:39.380779 Attempting to get author image
+ERROR:__main__:2024-06-11 11:08:39.380779 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:08:39.380779 list index out of range
+INFO:__main__:2024-06-11 11:08:41.406412 Goodreads author scrape
+ERROR:__main__:2024-06-11 11:08:55.161763 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 11:09:00.125413 Getting cover image of book
+INFO:__main__:2024-06-11 11:09:01.227451 Getting number of pages of book
+ERROR:__main__:2024-06-11 11:09:01.891448 'categories'
+INFO:__main__:2024-06-11 11:09:01.891448 Google Books author scrape
+INFO:__main__:2024-06-11 11:09:05.352300 Attempting to get author image
+ERROR:__main__:2024-06-11 11:09:05.352300 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:09:05.352300 list index out of range
+INFO:__main__:2024-06-11 11:09:05.352300 Attempting to get author image
+ERROR:__main__:2024-06-11 11:09:05.352300 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:09:05.352300 list index out of range
+INFO:__main__:2024-06-11 11:09:07.391818 Goodreads author scrape
+ERROR:__main__:2024-06-11 11:09:23.205409 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 11:09:28.170439 Getting cover image of book
+INFO:__main__:2024-06-11 11:09:29.594462 Getting number of pages of book
+WARNING:__main__:2024-06-11 11:09:29.596461 No number of pages found!
+ERROR:__main__:2024-06-11 11:09:30.244461 'publisher'
+INFO:__main__:2024-06-11 11:09:30.245461 Google Books author scrape
+INFO:__main__:2024-06-11 11:09:33.660484 Attempting to get author image
+ERROR:__main__:2024-06-11 11:09:33.660484 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 11:09:33.660484 Attempting to get author image
+ERROR:__main__:2024-06-11 11:09:33.660484 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 11:09:33.660484 Attempting to get author image
+ERROR:__main__:2024-06-11 11:09:33.660484 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 11:09:33.660484 list index out of range
+INFO:__main__:2024-06-11 11:09:35.698801 Goodreads author scrape
