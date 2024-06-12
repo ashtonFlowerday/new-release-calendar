@@ -1,162 +1,2051 @@
-INFO:__main__:2024-06-11 11:04:17.378524 Jan 2024 has 16 pages of new releases
-INFO:__main__:2024-06-11 11:04:17.378524 Scraping year and month: Jan 2024
-INFO:__main__:2024-06-11 11:04:17.378524 Scraping page: 1
-INFO:__main__:2024-06-11 11:04:47.576502 Scraping of book table complete!
-ERROR:__main__:2024-06-11 11:04:47.576502 'NoneType' object is not subscriptable
-INFO:__main__:2024-06-11 11:04:48.731515 Getting cover image of book
-INFO:__main__:2024-06-11 11:04:50.094535 Getting number of pages of book
-INFO:__main__:2024-06-11 11:04:50.765537 Google Books author scrape
-INFO:__main__:2024-06-11 11:04:54.401799 Attempting to get author image
-ERROR:__main__:2024-06-11 11:04:54.402800 list index out of range
+INFO:__main__:2024-06-11 15:34:52.505876 Jan 2024 has 16 pages of new releases
+INFO:__main__:2024-06-11 15:34:52.505876 Scraping year and month: Jan 2024
+INFO:__main__:2024-06-11 15:34:52.505876 Scraping page: 1
+INFO:__main__:2024-06-11 15:35:22.933284 Scraping of book table complete!
+ERROR:__main__:2024-06-11 15:35:22.933284 'NoneType' object is not subscriptable
+INFO:__main__:2024-06-11 15:35:24.077937 Getting cover image of book
+INFO:__main__:2024-06-11 15:35:25.433126 Getting number of pages of book
+INFO:__main__:2024-06-11 15:35:26.166962 Google Books author scrape
+INFO:__main__:2024-06-11 15:35:29.985658 Attempting to get author image
+ERROR:__main__:2024-06-11 15:35:29.986658 list index out of range
 INFO:__main__:Attempting to get author bio
-INFO:__main__:2024-06-11 11:04:54.402800 Attempting to get author image
-ERROR:__main__:2024-06-11 11:04:54.402800 list index out of range
+INFO:__main__:2024-06-11 15:35:29.986658 Attempting to get author image
+ERROR:__main__:2024-06-11 15:35:29.986658 list index out of range
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:04:54.402800 list index out of range
-INFO:__main__:2024-06-11 11:04:56.428848 Goodreads author scrape
-ERROR:__main__:2024-06-11 11:05:12.681621 'NoneType' object has no attribute 'get_text'
-INFO:__main__:New author photo added
+ERROR:__main__:2024-06-11 15:35:29.986658 list index out of range
+INFO:__main__:2024-06-11 15:35:32.026318 Goodreads author scrape
+ERROR:__main__:2024-06-11 15:39:59.978692 'NoneType' object has no attribute 'get_text'
 ERROR:__main__:
-ERROR:__main__:2024-06-11 11:05:19.033634 'NoneType' object has no attribute 'get_text'
-INFO:__main__:2024-06-11 11:05:24.218657 Getting cover image of book
-INFO:__main__:2024-06-11 11:05:25.588614 Getting number of pages of book
-INFO:__main__:2024-06-11 11:05:26.246119 Google Books author scrape
-INFO:__main__:2024-06-11 11:05:30.072130 Attempting to get author image
+ERROR:__main__:2024-06-11 15:40:06.234630 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 15:40:11.429946 Getting cover image of book
+INFO:__main__:2024-06-11 15:40:12.525183 Getting number of pages of book
+INFO:__main__:2024-06-11 15:40:13.224291 Google Books author scrape
+INFO:__main__:2024-06-11 15:40:17.191713 Attempting to get author image
 INFO:__main__:Attempting to get author bio
-INFO:__main__:2024-06-11 11:05:31.680130 Attempting to get author image
-ERROR:__main__:2024-06-11 11:05:31.680130 list index out of range
+INFO:__main__:2024-06-11 15:40:19.010988 Attempting to get author image
+ERROR:__main__:2024-06-11 15:40:19.010988 list index out of range
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:05:31.681131 list index out of range
-INFO:__main__:2024-06-11 11:05:33.705616 Goodreads author scrape
+ERROR:__main__:2024-06-11 15:40:19.010988 list index out of range
+INFO:__main__:2024-06-11 15:40:21.060558 Goodreads author scrape
+INFO:__main__:New author bio added
+ERROR:__main__:2024-06-11 15:40:51.084397 'NoneType' object has no attribute 'find'
+INFO:__main__:2024-06-11 15:40:56.279013 Getting cover image of book
+INFO:__main__:2024-06-11 15:40:57.387077 Getting number of pages of book
+WARNING:__main__:2024-06-11 15:40:57.389075 No number of pages found!
+ERROR:__main__:2024-06-11 15:40:58.150668 'publisher'
+INFO:__main__:2024-06-11 15:40:58.150668 Google Books author scrape
+INFO:__main__:2024-06-11 15:41:01.990597 Attempting to get author image
+ERROR:__main__:2024-06-11 15:41:01.990597 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:41:01.990597 list index out of range
+INFO:__main__:2024-06-11 15:41:01.990597 Attempting to get author image
+ERROR:__main__:2024-06-11 15:41:01.990597 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:41:01.990597 list index out of range
+INFO:__main__:2024-06-11 15:41:04.026679 Goodreads author scrape
+INFO:__main__:2024-06-11 15:42:27.412794 Jan 2024 has 16 pages of new releases
+INFO:__main__:2024-06-11 15:42:27.412794 Scraping year and month: Jan 2024
+INFO:__main__:2024-06-11 15:42:27.412794 Scraping page: 1
+INFO:__main__:2024-06-11 15:42:57.544784 Scraping of book table complete!
+ERROR:__main__:2024-06-11 15:42:57.544784 'NoneType' object is not subscriptable
+INFO:__main__:2024-06-11 15:42:58.676958 Getting cover image of book
+INFO:__main__:2024-06-11 15:43:00.024291 Getting number of pages of book
+INFO:__main__:2024-06-11 15:43:00.671952 Google Books author scrape
+INFO:__main__:2024-06-11 15:43:04.063873 Attempting to get author image
+ERROR:__main__:2024-06-11 15:43:04.063873 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 15:43:04.063873 Attempting to get author image
+ERROR:__main__:2024-06-11 15:43:04.063873 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:43:04.063873 list index out of range
+INFO:__main__:2024-06-11 15:43:06.096631 Goodreads author scrape
+ERROR:__main__:2024-06-11 15:47:28.859506 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 15:47:35.191043 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 15:47:41.400024 Getting cover image of book
+INFO:__main__:2024-06-11 15:47:42.489678 Getting number of pages of book
+INFO:__main__:2024-06-11 15:47:43.164461 Google Books author scrape
+INFO:__main__:2024-06-11 15:47:46.693239 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 15:47:48.773210 Attempting to get author image
+ERROR:__main__:2024-06-11 15:47:48.773210 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:47:48.773210 list index out of range
+INFO:__main__:2024-06-11 15:47:50.798974 Goodreads author scrape
 INFO:__main__:New author bio added
 ERROR:__main__:
-ERROR:__main__:2024-06-11 11:05:55.775030 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 15:48:15.406380 'NoneType' object has no attribute 'get_text'
 ERROR:__main__:
-ERROR:__main__:2024-06-11 11:06:02.450044 'NoneType' object has no attribute 'get_text'
-INFO:__main__:2024-06-11 11:06:07.656618 Getting cover image of book
-INFO:__main__:2024-06-11 11:06:08.770618 Getting number of pages of book
-WARNING:__main__:2024-06-11 11:06:08.772615 No number of pages found!
-ERROR:__main__:2024-06-11 11:06:09.404617 'publisher'
-INFO:__main__:2024-06-11 11:06:09.404617 Google Books author scrape
-INFO:__main__:2024-06-11 11:06:12.507905 Attempting to get author image
-ERROR:__main__:2024-06-11 11:06:12.507905 list index out of range
+ERROR:__main__:2024-06-11 15:48:22.952285 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 15:48:29.226593 Getting cover image of book
+INFO:__main__:2024-06-11 15:48:30.334517 Getting number of pages of book
+WARNING:__main__:2024-06-11 15:48:30.336516 No number of pages found!
+ERROR:__main__:2024-06-11 15:48:30.988615 'publisher'
+INFO:__main__:2024-06-11 15:48:30.988615 Google Books author scrape
+INFO:__main__:2024-06-11 15:48:33.957926 Attempting to get author image
+ERROR:__main__:2024-06-11 15:48:33.957926 list index out of range
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:06:12.507905 list index out of range
-INFO:__main__:2024-06-11 11:06:12.507905 Attempting to get author image
-ERROR:__main__:2024-06-11 11:06:12.508906 list index out of range
+ERROR:__main__:2024-06-11 15:48:33.958928 list index out of range
+INFO:__main__:2024-06-11 15:48:33.958928 Attempting to get author image
+ERROR:__main__:2024-06-11 15:48:33.958928 list index out of range
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:06:12.508906 list index out of range
-INFO:__main__:2024-06-11 11:06:14.546902 Goodreads author scrape
+ERROR:__main__:2024-06-11 15:48:33.958928 list index out of range
+INFO:__main__:2024-06-11 15:48:35.998451 Goodreads author scrape
+ERROR:__main__:2024-06-11 15:49:01.047507 'NoneType' object has no attribute 'find'
+INFO:__main__:2024-06-11 15:49:06.230614 Getting cover image of book
+INFO:__main__:2024-06-11 15:49:07.586735 Getting number of pages of book
+INFO:__main__:2024-06-11 15:49:08.274765 Google Books author scrape
+INFO:__main__:2024-06-11 15:49:12.116444 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 15:49:15.252744 Attempting to get author image
+ERROR:__main__:2024-06-11 15:49:15.252744 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:49:15.252744 list index out of range
+INFO:__main__:2024-06-11 15:49:17.285611 Goodreads author scrape
+ERROR:__main__:2024-06-11 15:49:39.077636 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 15:49:45.051455 Getting cover image of book
+INFO:__main__:2024-06-11 15:49:46.145071 Getting number of pages of book
+INFO:__main__:2024-06-11 15:49:46.801353 Google Books author scrape
+INFO:__main__:2024-06-11 15:49:50.775727 Attempting to get author image
+ERROR:__main__:2024-06-11 15:49:50.775727 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:49:50.775727 list index out of range
+INFO:__main__:2024-06-11 15:49:50.775727 Attempting to get author image
+ERROR:__main__:2024-06-11 15:49:50.775727 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:49:50.775727 list index out of range
+INFO:__main__:2024-06-11 15:49:52.799082 Goodreads author scrape
+ERROR:__main__:2024-06-11 15:50:12.712844 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 15:50:17.634042 Getting cover image of book
+INFO:__main__:2024-06-11 15:50:18.726180 Getting number of pages of book
+ERROR:__main__:2024-06-11 15:50:19.392888 'items'
+ERROR:__main__:2024-06-11 15:50:19.392888 'items'
+INFO:__main__:2024-06-11 15:50:20.252278 Getting cover image of book
+INFO:__main__:2024-06-11 15:50:21.346793 Getting number of pages of book
+ERROR:__main__:2024-06-11 15:50:22.039947 'categories'
+INFO:__main__:2024-06-11 15:50:22.040947 Google Books author scrape
+INFO:__main__:2024-06-11 15:50:25.234341 Attempting to get author image
+ERROR:__main__:2024-06-11 15:50:25.234341 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:50:25.235341 list index out of range
+INFO:__main__:2024-06-11 15:50:25.235341 Attempting to get author image
+ERROR:__main__:2024-06-11 15:50:25.235341 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:50:25.235341 list index out of range
+INFO:__main__:2024-06-11 15:50:27.256029 Goodreads author scrape
+ERROR:__main__:2024-06-11 15:50:45.294907 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 15:50:50.244710 Getting cover image of book
+INFO:__main__:2024-06-11 15:50:51.336001 Getting number of pages of book
+ERROR:__main__:2024-06-11 15:50:52.046203 'categories'
+INFO:__main__:2024-06-11 15:50:52.046203 Google Books author scrape
+INFO:__main__:2024-06-11 15:50:55.118481 Attempting to get author image
+ERROR:__main__:2024-06-11 15:50:55.118481 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:50:55.118481 list index out of range
+INFO:__main__:2024-06-11 15:50:55.118481 Attempting to get author image
+ERROR:__main__:2024-06-11 15:50:55.118481 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:50:55.118481 list index out of range
+INFO:__main__:2024-06-11 15:50:57.158340 Goodreads author scrape
+ERROR:__main__:2024-06-11 15:51:16.653452 'NoneType' object has no attribute 'find'
+INFO:__main__:2024-06-11 15:51:21.588392 Getting cover image of book
+INFO:__main__:2024-06-11 15:51:22.680848 Getting number of pages of book
+ERROR:__main__:2024-06-11 15:51:23.324988 'categories'
+INFO:__main__:2024-06-11 15:51:23.324988 Google Books author scrape
+INFO:__main__:2024-06-11 15:51:27.001240 Attempting to get author image
+ERROR:__main__:2024-06-11 15:51:27.001240 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:51:27.001240 list index out of range
+INFO:__main__:2024-06-11 15:51:27.001240 Attempting to get author image
+ERROR:__main__:2024-06-11 15:51:27.001240 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:51:27.001240 list index out of range
+INFO:__main__:2024-06-11 15:51:29.047278 Goodreads author scrape
+ERROR:__main__:2024-06-11 15:51:44.521928 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 15:51:48.596615 'NoneType' object is not subscriptable
+INFO:__main__:2024-06-11 15:51:49.462982 Getting cover image of book
+INFO:__main__:2024-06-11 15:51:50.567978 Getting number of pages of book
+ERROR:__main__:2024-06-11 15:51:51.239407 'items'
+ERROR:__main__:2024-06-11 15:51:51.239407 'items'
+INFO:__main__:2024-06-11 15:51:52.100346 Getting cover image of book
+INFO:__main__:2024-06-11 15:51:53.263354 Getting number of pages of book
+WARNING:__main__:2024-06-11 15:51:53.265353 No number of pages found!
+ERROR:__main__:2024-06-11 15:51:53.987159 'categories'
+INFO:__main__:2024-06-11 15:51:53.987159 Google Books author scrape
+INFO:__main__:2024-06-11 15:51:56.962308 Attempting to get author image
+ERROR:__main__:2024-06-11 15:51:56.962308 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:51:56.963311 list index out of range
+INFO:__main__:2024-06-11 15:51:56.963311 Attempting to get author image
+ERROR:__main__:2024-06-11 15:51:56.963311 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:51:56.963311 list index out of range
+INFO:__main__:2024-06-11 15:51:59.001884 Goodreads author scrape
+ERROR:__main__:2024-06-11 15:56:25.852286 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 15:56:30.784391 Getting cover image of book
+INFO:__main__:2024-06-11 15:56:32.420249 Getting number of pages of book
+WARNING:__main__:2024-06-11 15:56:32.422250 No number of pages found!
+ERROR:__main__:2024-06-11 15:56:33.103643 'publisher'
+INFO:__main__:2024-06-11 15:56:33.103643 Google Books author scrape
+INFO:__main__:2024-06-11 15:56:36.611605 Attempting to get author image
+ERROR:__main__:2024-06-11 15:56:36.611605 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 15:56:36.611605 Attempting to get author image
+ERROR:__main__:2024-06-11 15:56:36.611605 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 15:56:36.611605 Attempting to get author image
+ERROR:__main__:2024-06-11 15:56:36.611605 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:56:36.611605 list index out of range
+INFO:__main__:2024-06-11 15:56:38.653542 Goodreads author scrape
 ERROR:__main__:
-ERROR:__main__:2024-06-11 11:06:29.539542 'NoneType' object has no attribute 'get_text'
-INFO:__main__:2024-06-11 11:06:34.732952 Getting cover image of book
-INFO:__main__:2024-06-11 11:06:36.080950 Getting number of pages of book
-INFO:__main__:2024-06-11 11:06:36.756950 Google Books author scrape
-INFO:__main__:2024-06-11 11:06:40.300948 Attempting to get author image
+ERROR:__main__:2024-06-11 15:56:58.518979 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 15:57:05.832327 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 15:57:14.710620 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 15:57:20.907498 Getting cover image of book
+INFO:__main__:2024-06-11 15:57:22.265210 Getting number of pages of book
+INFO:__main__:2024-06-11 15:57:23.037945 Google Books author scrape
+INFO:__main__:2024-06-11 15:57:26.915281 Attempting to get author image
 INFO:__main__:Attempting to get author bio
-INFO:__main__:2024-06-11 11:06:41.298947 Attempting to get author image
-ERROR:__main__:2024-06-11 11:06:41.298947 list index out of range
+INFO:__main__:2024-06-11 15:57:28.819744 Attempting to get author image
+ERROR:__main__:2024-06-11 15:57:28.819744 list index out of range
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:06:41.298947 list index out of range
-INFO:__main__:2024-06-11 11:06:43.345961 Goodreads author scrape
-ERROR:__main__:2024-06-11 11:06:59.060418 'NoneType' object has no attribute 'get_text'
-INFO:__main__:2024-06-11 11:07:04.023949 Getting cover image of book
-INFO:__main__:2024-06-11 11:07:05.121948 Getting number of pages of book
-ERROR:__main__:2024-06-11 11:07:05.786951 'categories'
-INFO:__main__:2024-06-11 11:07:05.786951 Google Books author scrape
-INFO:__main__:2024-06-11 11:07:09.408948 Attempting to get author image
-ERROR:__main__:2024-06-11 11:07:09.408948 list index out of range
+ERROR:__main__:2024-06-11 15:57:28.819744 list index out of range
+INFO:__main__:2024-06-11 15:57:30.861908 Goodreads author scrape
+ERROR:__main__:2024-06-11 15:57:57.555139 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 15:58:04.856612 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 15:58:11.343493 Getting cover image of book
+INFO:__main__:2024-06-11 15:58:12.434771 Getting number of pages of book
+ERROR:__main__:2024-06-11 15:58:13.172062 'categories'
+INFO:__main__:2024-06-11 15:58:13.172062 Google Books author scrape
+INFO:__main__:2024-06-11 15:58:16.783340 Attempting to get author image
+ERROR:__main__:2024-06-11 15:58:16.783340 list index out of range
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:07:09.408948 list index out of range
-INFO:__main__:2024-06-11 11:07:09.408948 Attempting to get author image
-ERROR:__main__:2024-06-11 11:07:09.408948 list index out of range
+INFO:__main__:2024-06-11 15:58:16.783340 Attempting to get author image
+ERROR:__main__:2024-06-11 15:58:16.783340 list index out of range
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:07:09.408948 list index out of range
-INFO:__main__:2024-06-11 11:07:11.431971 Goodreads author scrape
-ERROR:__main__:2024-06-11 11:07:25.685536 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 15:58:16.783340 list index out of range
+INFO:__main__:2024-06-11 15:58:18.814841 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 15:58:37.769244 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 15:58:42.964624 Getting cover image of book
+INFO:__main__:2024-06-11 15:58:44.051869 Getting number of pages of book
+ERROR:__main__:2024-06-11 15:58:44.744370 'categories'
+INFO:__main__:2024-06-11 15:58:44.744370 Google Books author scrape
+INFO:__main__:2024-06-11 15:58:47.811851 Attempting to get author image
+ERROR:__main__:2024-06-11 15:58:47.812853 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:58:47.812853 list index out of range
+INFO:__main__:2024-06-11 15:58:47.812853 Attempting to get author image
+ERROR:__main__:2024-06-11 15:58:47.812853 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:58:47.812853 list index out of range
+INFO:__main__:2024-06-11 15:58:47.812853 Attempting to get author image
+ERROR:__main__:2024-06-11 15:58:47.812853 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 15:58:47.812853 list index out of range
+INFO:__main__:2024-06-11 15:58:49.853439 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:03:22.865849 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:03:28.077741 Getting cover image of book
+INFO:__main__:2024-06-11 16:03:29.166432 Getting number of pages of book
+WARNING:__main__:2024-06-11 16:03:29.168430 No number of pages found!
+ERROR:__main__:2024-06-11 16:03:29.921210 'publisher'
+INFO:__main__:2024-06-11 16:03:29.921210 Google Books author scrape
+INFO:__main__:2024-06-11 16:03:33.784908 Attempting to get author image
+ERROR:__main__:2024-06-11 16:03:33.785911 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:03:33.785911 list index out of range
+INFO:__main__:2024-06-11 16:03:33.785911 Attempting to get author image
+ERROR:__main__:2024-06-11 16:03:33.785911 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:03:33.785911 list index out of range
+INFO:__main__:2024-06-11 16:03:35.825629 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:03:40.177543 'NoneType' object has no attribute 'find_all'
+INFO:__main__:2024-06-11 16:03:43.084849 Getting cover image of book
+INFO:__main__:2024-06-11 16:03:44.441078 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:03:45.189265 'publisher'
+INFO:__main__:2024-06-11 16:03:45.189265 Google Books author scrape
+INFO:__main__:2024-06-11 16:03:50.766080 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:04:10.291112 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:04:19.782587 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:04:27.421660 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:04:32.927233 Getting cover image of book
+INFO:__main__:2024-06-11 16:04:34.279020 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:04:35.037024 'categories'
+INFO:__main__:2024-06-11 16:04:35.037024 Google Books author scrape
+INFO:__main__:2024-06-11 16:04:40.047050 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:05:01.493354 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:05:06.989963 Getting cover image of book
+INFO:__main__:2024-06-11 16:05:08.095243 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:05:08.750599 'publisher'
+INFO:__main__:2024-06-11 16:05:08.751597 Google Books author scrape
+INFO:__main__:2024-06-11 16:05:12.582052 Attempting to get author image
+ERROR:__main__:2024-06-11 16:05:12.582052 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:05:12.583052 Attempting to get author image
+ERROR:__main__:2024-06-11 16:05:12.583052 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:05:12.583052 list index out of range
+INFO:__main__:2024-06-11 16:05:14.604966 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:05:32.977495 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:05:38.211922 Getting cover image of book
+INFO:__main__:2024-06-11 16:05:39.306735 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:05:39.994594 'categories'
+INFO:__main__:2024-06-11 16:05:39.994594 Google Books author scrape
+INFO:__main__:2024-06-11 16:05:43.498378 Attempting to get author image
+ERROR:__main__:2024-06-11 16:05:43.498378 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:05:43.498378 Attempting to get author image
+ERROR:__main__:2024-06-11 16:05:43.498378 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:05:43.498378 list index out of range
+INFO:__main__:2024-06-11 16:05:45.531838 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:06:04.615900 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:06:09.816894 Getting cover image of book
+INFO:__main__:2024-06-11 16:06:11.191691 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:06:11.853892 'publisher'
+INFO:__main__:2024-06-11 16:06:11.853892 Google Books author scrape
+INFO:__main__:2024-06-11 16:06:16.147246 Attempting to get author image
+ERROR:__main__:2024-06-11 16:06:16.148249 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:06:16.148249 list index out of range
+INFO:__main__:2024-06-11 16:06:18.190065 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:06:49.269942 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:06:54.643615 Getting cover image of book
+INFO:__main__:2024-06-11 16:06:55.741918 Getting number of pages of book
+INFO:__main__:2024-06-11 16:06:56.474471 Google Books author scrape
+INFO:__main__:2024-06-11 16:07:00.283547 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:07:02.129378 Attempting to get author image
+ERROR:__main__:2024-06-11 16:07:02.129378 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:07:02.129378 list index out of range
+INFO:__main__:2024-06-11 16:07:04.157569 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:11:32.302999 'NoneType' object has no attribute 'find'
+INFO:__main__:2024-06-11 16:11:38.258987 Getting cover image of book
+INFO:__main__:2024-06-11 16:11:39.621446 Getting number of pages of book
+INFO:__main__:2024-06-11 16:11:40.317713 Google Books author scrape
+INFO:__main__:2024-06-11 16:11:44.512043 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:11:46.863297 Attempting to get author image
+ERROR:__main__:2024-06-11 16:11:46.863297 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:11:46.863297 list index out of range
+INFO:__main__:2024-06-11 16:11:48.906376 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:12:10.300787 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:12:15.506629 Getting cover image of book
+INFO:__main__:2024-06-11 16:12:16.608191 Getting number of pages of book
+INFO:__main__:2024-06-11 16:12:17.281141 Google Books author scrape
+INFO:__main__:2024-06-11 16:12:21.495182 Attempting to get author image
+ERROR:__main__:2024-06-11 16:12:21.495182 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:12:21.495182 Attempting to get author image
+ERROR:__main__:2024-06-11 16:12:21.495182 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:12:21.495182 list index out of range
+INFO:__main__:2024-06-11 16:12:23.538121 Goodreads author scrape
+INFO:__main__:New author bio added
 INFO:__main__:New author photo added
-INFO:__main__:2024-06-11 11:07:31.629059 Getting cover image of book
-INFO:__main__:2024-06-11 11:07:32.752058 Getting number of pages of book
-ERROR:__main__:2024-06-11 11:07:33.357070 'items'
-ERROR:__main__:2024-06-11 11:07:33.357070 'items'
-INFO:__main__:2024-06-11 11:07:34.213073 Getting cover image of book
-INFO:__main__:2024-06-11 11:07:35.326492 Getting number of pages of book
-WARNING:__main__:2024-06-11 11:07:35.328489 No number of pages found!
-ERROR:__main__:2024-06-11 11:07:35.987489 'categories'
-INFO:__main__:2024-06-11 11:07:35.987489 Google Books author scrape
-INFO:__main__:2024-06-11 11:07:39.121492 Attempting to get author image
-ERROR:__main__:2024-06-11 11:07:39.122491 list index out of range
+INFO:__main__:2024-06-11 16:12:50.031841 Getting cover image of book
+INFO:__main__:2024-06-11 16:12:51.396772 Getting number of pages of book
+INFO:__main__:2024-06-11 16:12:52.116771 Google Books author scrape
+INFO:__main__:2024-06-11 16:12:55.285747 Attempting to get author image
+ERROR:__main__:2024-06-11 16:12:55.285747 list index out of range
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:07:39.122491 list index out of range
-INFO:__main__:2024-06-11 11:07:39.122491 Attempting to get author image
-ERROR:__main__:2024-06-11 11:07:39.122491 list index out of range
+ERROR:__main__:2024-06-11 16:12:55.285747 list index out of range
+INFO:__main__:2024-06-11 16:12:55.285747 Attempting to get author image
+ERROR:__main__:2024-06-11 16:12:55.285747 list index out of range
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:07:39.122491 list index out of range
-INFO:__main__:2024-06-11 11:07:41.162991 Goodreads author scrape
-ERROR:__main__:2024-06-11 11:07:56.574838 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 16:12:55.285747 list index out of range
+INFO:__main__:2024-06-11 16:12:57.315263 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:13:16.031580 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 16:13:23.507134 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:13:30.720814 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:13:35.912361 Getting cover image of book
+WARNING:__main__:2024-06-11 16:13:35.912361 No cover found!
+INFO:__main__:2024-06-11 16:13:35.912361 Getting number of pages of book
+INFO:__main__:2024-06-11 16:13:36.585720 Google Books author scrape
+INFO:__main__:2024-06-11 16:13:39.642035 Attempting to get author image
+ERROR:__main__:2024-06-11 16:13:39.642035 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:13:39.642035 Attempting to get author image
+ERROR:__main__:2024-06-11 16:13:39.642035 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:13:39.642035 list index out of range
+INFO:__main__:2024-06-11 16:13:41.672623 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:14:10.419260 'NoneType' object has no attribute 'find'
+INFO:__main__:2024-06-11 16:14:16.635477 Getting cover image of book
+INFO:__main__:2024-06-11 16:14:17.996307 Getting number of pages of book
+INFO:__main__:2024-06-11 16:14:18.692215 Google Books author scrape
+INFO:__main__:2024-06-11 16:14:22.117473 Attempting to get author image
+ERROR:__main__:2024-06-11 16:14:22.117473 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:14:22.117473 list index out of range
+INFO:__main__:2024-06-11 16:14:22.117473 Attempting to get author image
+ERROR:__main__:2024-06-11 16:14:22.117473 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:14:22.117473 list index out of range
+INFO:__main__:2024-06-11 16:14:24.159191 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:14:45.261099 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:14:51.521904 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:14:57.058758 Getting cover image of book
+INFO:__main__:2024-06-11 16:14:58.164974 Getting number of pages of book
+INFO:__main__:2024-06-11 16:14:58.821625 Google Books author scrape
+INFO:__main__:2024-06-11 16:15:04.550080 Goodreads author scrape
+ERROR:__main__:
+INFO:__main__:2024-06-11 16:15:26.033656 Getting cover image of book
+INFO:__main__:2024-06-11 16:15:27.156730 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:15:27.837473 'categories'
+INFO:__main__:2024-06-11 16:15:27.837473 Google Books author scrape
+INFO:__main__:2024-06-11 16:15:31.562797 Attempting to get author image
+ERROR:__main__:2024-06-11 16:15:31.562797 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:15:31.563802 list index out of range
+INFO:__main__:2024-06-11 16:15:31.563802 Attempting to get author image
+ERROR:__main__:2024-06-11 16:15:31.563802 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:15:31.563802 list index out of range
+INFO:__main__:2024-06-11 16:15:33.586577 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:15:55.461569 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 16:15:59.561318 'NoneType' object is not subscriptable
+INFO:__main__:2024-06-11 16:16:00.417474 Getting cover image of book
+INFO:__main__:2024-06-11 16:16:01.504733 Getting number of pages of book
+INFO:__main__:2024-06-11 16:16:02.186042 Google Books author scrape
+INFO:__main__:2024-06-11 16:16:05.286611 Attempting to get author image
+ERROR:__main__:2024-06-11 16:16:05.286611 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:16:05.287612 Attempting to get author image
+ERROR:__main__:2024-06-11 16:16:05.287612 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:16:05.287612 list index out of range
+INFO:__main__:2024-06-11 16:16:07.315376 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:20:33.564131 'NoneType' object has no attribute 'find'
+INFO:__main__:2024-06-11 16:20:38.761352 Getting cover image of book
+INFO:__main__:2024-06-11 16:20:39.870710 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:20:40.560654 'publisher'
+INFO:__main__:2024-06-11 16:20:40.560654 Google Books author scrape
+INFO:__main__:2024-06-11 16:20:44.212594 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:20:47.396603 Attempting to get author image
+ERROR:__main__:2024-06-11 16:20:47.396603 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:20:47.396603 list index out of range
+INFO:__main__:2024-06-11 16:20:49.444231 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:25:19.294220 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:25:26.855566 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:25:33.753072 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:25:39.027250 Getting cover image of book
+INFO:__main__:2024-06-11 16:25:40.388248 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:25:41.068250 'publisher'
+INFO:__main__:2024-06-11 16:25:41.068250 Google Books author scrape
+INFO:__main__:2024-06-11 16:25:44.872607 Attempting to get author image
+ERROR:__main__:2024-06-11 16:25:44.872607 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:25:44.872607 list index out of range
+INFO:__main__:2024-06-11 16:25:44.872607 Attempting to get author image
+ERROR:__main__:2024-06-11 16:25:44.872607 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:25:44.873606 list index out of range
+INFO:__main__:2024-06-11 16:25:46.910817 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:26:06.008943 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:26:10.960869 Getting cover image of book
+INFO:__main__:2024-06-11 16:26:12.047424 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:26:12.710948 'publisher'
+INFO:__main__:2024-06-11 16:26:12.710948 Google Books author scrape
+INFO:__main__:2024-06-11 16:26:15.910081 Attempting to get author image
+ERROR:__main__:2024-06-11 16:26:15.910081 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:26:15.911081 list index out of range
+INFO:__main__:2024-06-11 16:26:15.911081 Attempting to get author image
+ERROR:__main__:2024-06-11 16:26:15.911081 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:26:15.911081 list index out of range
+INFO:__main__:2024-06-11 16:26:15.911081 Attempting to get author image
+ERROR:__main__:2024-06-11 16:26:15.911081 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:26:15.911081 list index out of range
+INFO:__main__:2024-06-11 16:26:17.951965 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:26:37.334823 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 16:27:44.554285 'NoneType' object has no attribute 'find'
+INFO:__main__:2024-06-11 16:27:50.777309 Getting cover image of book
+INFO:__main__:2024-06-11 16:27:51.875172 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:27:52.546686 'categories'
+INFO:__main__:2024-06-11 16:27:52.546686 Google Books author scrape
+INFO:__main__:2024-06-11 16:27:55.714472 Attempting to get author image
+ERROR:__main__:2024-06-11 16:27:55.714472 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:27:55.715474 Attempting to get author image
+ERROR:__main__:2024-06-11 16:27:55.715474 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:27:55.715474 list index out of range
+INFO:__main__:2024-06-11 16:27:57.752631 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:28:17.449368 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:28:22.640113 Getting cover image of book
+INFO:__main__:2024-06-11 16:28:23.742087 Getting number of pages of book
+INFO:__main__:2024-06-11 16:28:24.416951 Google Books author scrape
+INFO:__main__:2024-06-11 16:28:27.433073 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:28:42.483101 Attempting to get author image
+ERROR:__main__:2024-06-11 16:28:42.483101 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:28:42.483101 list index out of range
+INFO:__main__:2024-06-11 16:28:44.529863 Goodreads author scrape
+INFO:__main__:2024-06-11 16:29:09.681399 Getting cover image of book
+INFO:__main__:2024-06-11 16:29:11.076032 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:29:11.786012 'categories'
+INFO:__main__:2024-06-11 16:29:11.786012 Google Books author scrape
+INFO:__main__:2024-06-11 16:29:16.050709 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:29:18.436750 Attempting to get author image
+ERROR:__main__:2024-06-11 16:29:18.436750 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:29:18.436750 list index out of range
+INFO:__main__:2024-06-11 16:29:20.478347 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:33:41.507011 'NoneType' object has no attribute 'find_all'
+INFO:__main__:2024-06-11 16:33:44.671057 Getting cover image of book
+INFO:__main__:2024-06-11 16:33:45.761447 Getting number of pages of book
+INFO:__main__:2024-06-11 16:33:46.466566 Google Books author scrape
+INFO:__main__:2024-06-11 16:33:49.991736 Attempting to get author image
+ERROR:__main__:2024-06-11 16:33:49.991736 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:33:49.991736 Attempting to get author image
+ERROR:__main__:2024-06-11 16:33:49.991736 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:33:49.991736 list index out of range
+INFO:__main__:2024-06-11 16:33:52.026790 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:34:11.805493 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:34:17.040208 Getting cover image of book
+INFO:__main__:2024-06-11 16:34:18.142224 Getting number of pages of book
+INFO:__main__:2024-06-11 16:34:18.862821 Google Books author scrape
+INFO:__main__:2024-06-11 16:34:22.055650 Attempting to get author image
+ERROR:__main__:2024-06-11 16:34:22.056652 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:34:22.056652 Attempting to get author image
+ERROR:__main__:2024-06-11 16:34:22.056652 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:34:22.056652 list index out of range
+INFO:__main__:2024-06-11 16:34:24.091559 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:34:44.644485 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:34:49.838979 Getting cover image of book
+INFO:__main__:2024-06-11 16:34:50.944037 Getting number of pages of book
+INFO:__main__:2024-06-11 16:34:51.704384 Google Books author scrape
+INFO:__main__:2024-06-11 16:34:56.554843 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:35:00.637688 Attempting to get author image
+ERROR:__main__:2024-06-11 16:35:00.638686 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:35:00.638686 list index out of range
+INFO:__main__:2024-06-11 16:35:02.674805 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:35:18.066034 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:35:23.288277 Getting cover image of book
+INFO:__main__:2024-06-11 16:35:24.373619 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:35:25.107823 'publisher'
+INFO:__main__:2024-06-11 16:35:25.108822 Google Books author scrape
+INFO:__main__:2024-06-11 16:35:31.233224 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:35:34.374008 list index out of range
+INFO:__main__:2024-06-11 16:35:34.374008 Attempting to get author image
+ERROR:__main__:2024-06-11 16:35:34.374008 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:35:34.374008 list index out of range
+INFO:__main__:2024-06-11 16:35:36.399255 Goodreads author scrape
+ERROR:__main__:
+INFO:__main__:2024-06-11 16:36:06.739098 Getting cover image of book
+INFO:__main__:2024-06-11 16:36:07.933342 Getting number of pages of book
+INFO:__main__:2024-06-11 16:36:08.646312 Google Books author scrape
+INFO:__main__:2024-06-11 16:36:13.921311 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:40:42.090664 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:40:47.389840 Getting cover image of book
+INFO:__main__:2024-06-11 16:40:48.492017 Getting number of pages of book
+WARNING:__main__:2024-06-11 16:40:48.495015 No number of pages found!
+INFO:__main__:2024-06-11 16:40:49.235931 Google Books author scrape
+INFO:__main__:2024-06-11 16:40:52.810563 Attempting to get author image
+ERROR:__main__:2024-06-11 16:40:52.810563 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:40:52.810563 list index out of range
+INFO:__main__:2024-06-11 16:40:52.810563 Attempting to get author image
+ERROR:__main__:2024-06-11 16:40:52.810563 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:40:52.810563 list index out of range
+INFO:__main__:2024-06-11 16:40:54.844323 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:45:21.175390 'NoneType' object has no attribute 'find'
+INFO:__main__:2024-06-11 16:45:26.376511 Getting cover image of book
+INFO:__main__:2024-06-11 16:45:27.470927 Getting number of pages of book
+WARNING:__main__:2024-06-11 16:45:27.472929 No number of pages found!
+INFO:__main__:2024-06-11 16:45:28.212978 Google Books author scrape
+INFO:__main__:2024-06-11 16:45:31.280256 Attempting to get author image
+ERROR:__main__:2024-06-11 16:45:31.281258 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:45:31.281258 Attempting to get author image
+ERROR:__main__:2024-06-11 16:45:31.281258 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:45:31.281258 list index out of range
+INFO:__main__:2024-06-11 16:45:33.310311 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:50:03.464268 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:50:08.646462 Getting cover image of book
+INFO:__main__:2024-06-11 16:50:09.747239 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:50:10.433097 'publisher'
+INFO:__main__:2024-06-11 16:50:10.433097 Google Books author scrape
+INFO:__main__:2024-06-11 16:50:15.452028 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:50:16.824617 Attempting to get author image
+ERROR:__main__:2024-06-11 16:50:16.824617 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:50:16.824617 list index out of range
+INFO:__main__:2024-06-11 16:50:18.865075 Goodreads author scrape
+ERROR:__main__:
+INFO:__main__:2024-06-11 16:55:14.888635 Getting cover image of book
+INFO:__main__:2024-06-11 16:55:16.311154 Getting number of pages of book
+INFO:__main__:2024-06-11 16:55:17.040385 Google Books author scrape
+INFO:__main__:2024-06-11 16:55:20.273591 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:55:22.235337 Attempting to get author image
+ERROR:__main__:2024-06-11 16:55:22.235337 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:55:22.235337 list index out of range
+INFO:__main__:2024-06-11 16:55:24.261293 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:55:31.049650 'NoneType' object has no attribute 'find_all'
+INFO:__main__:2024-06-11 16:55:34.222104 Getting cover image of book
+INFO:__main__:2024-06-11 16:55:35.314156 Getting number of pages of book
+INFO:__main__:2024-06-11 16:55:36.408801 Google Books author scrape
+INFO:__main__:2024-06-11 16:55:39.700300 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:55:43.590859 Attempting to get author image
+ERROR:__main__:2024-06-11 16:55:43.591862 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:55:43.591862 list index out of range
+INFO:__main__:2024-06-11 16:55:45.637995 Goodreads author scrape
+INFO:__main__:New author bio added
+INFO:__main__:2024-06-11 16:56:08.051373 Getting cover image of book
+INFO:__main__:2024-06-11 16:56:09.146565 Getting number of pages of book
+INFO:__main__:2024-06-11 16:56:09.842406 Google Books author scrape
+INFO:__main__:2024-06-11 16:56:14.899008 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:56:33.603355 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:56:40.942632 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 16:56:48.686038 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:56:53.871592 Getting cover image of book
+INFO:__main__:2024-06-11 16:56:55.114198 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:56:55.904223 'categories'
+INFO:__main__:2024-06-11 16:56:55.904223 Google Books author scrape
+INFO:__main__:2024-06-11 16:56:59.287937 Attempting to get author image
+ERROR:__main__:2024-06-11 16:56:59.288939 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:56:59.288939 Attempting to get author image
+ERROR:__main__:2024-06-11 16:56:59.288939 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:56:59.288939 list index out of range
+INFO:__main__:2024-06-11 16:57:01.313206 Goodreads author scrape
+ERROR:__main__:2024-06-11 16:57:19.628731 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 16:57:24.917986 Getting cover image of book
+INFO:__main__:2024-06-11 16:57:26.024484 Getting number of pages of book
+ERROR:__main__:2024-06-11 16:57:26.700651 'publisher'
+INFO:__main__:2024-06-11 16:57:26.700651 Google Books author scrape
+INFO:__main__:2024-06-11 16:57:29.886717 Attempting to get author image
+ERROR:__main__:2024-06-11 16:57:29.886717 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 16:57:29.886717 Attempting to get author image
+ERROR:__main__:2024-06-11 16:57:29.886717 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 16:57:29.887717 list index out of range
+INFO:__main__:2024-06-11 16:57:31.919735 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:01:57.886463 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 17:02:01.958536 'NoneType' object is not subscriptable
+INFO:__main__:2024-06-11 17:02:02.830255 Getting cover image of book
+INFO:__main__:2024-06-11 17:02:03.926018 Getting number of pages of book
+INFO:__main__:2024-06-11 17:02:04.600135 Google Books author scrape
+INFO:__main__:2024-06-11 17:02:07.594580 Attempting to get author image
+ERROR:__main__:2024-06-11 17:02:07.594580 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:02:07.594580 Attempting to get author image
+ERROR:__main__:2024-06-11 17:02:07.595583 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:02:07.595583 list index out of range
+INFO:__main__:2024-06-11 17:02:09.625790 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:02:27.360548 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:02:32.316724 Getting cover image of book
+INFO:__main__:2024-06-11 17:02:33.403232 Getting number of pages of book
+INFO:__main__:2024-06-11 17:02:34.079151 Google Books author scrape
+INFO:__main__:2024-06-11 17:02:37.175466 Attempting to get author image
+ERROR:__main__:2024-06-11 17:02:37.175466 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:02:37.175466 Attempting to get author image
+ERROR:__main__:2024-06-11 17:02:37.175466 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:02:37.175466 list index out of range
+INFO:__main__:2024-06-11 17:02:39.214363 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:02:56.919866 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:03:01.858902 Getting cover image of book
+INFO:__main__:2024-06-11 17:03:03.264706 Getting number of pages of book
+INFO:__main__:2024-06-11 17:03:03.934035 Google Books author scrape
+INFO:__main__:2024-06-11 17:03:07.245921 Attempting to get author image
+ERROR:__main__:2024-06-11 17:03:07.245921 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:03:07.245921 Attempting to get author image
+ERROR:__main__:2024-06-11 17:03:07.245921 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:03:07.246921 list index out of range
+INFO:__main__:2024-06-11 17:03:09.277843 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:03:29.568033 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 17:03:37.120189 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:03:42.040844 Getting cover image of book
+INFO:__main__:2024-06-11 17:03:43.400877 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:03:44.075670 'categories'
+INFO:__main__:2024-06-11 17:03:44.075670 Google Books author scrape
+INFO:__main__:2024-06-11 17:03:47.893474 Attempting to get author image
+ERROR:__main__:2024-06-11 17:03:47.894475 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:03:47.894475 Attempting to get author image
+ERROR:__main__:2024-06-11 17:03:47.894475 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:03:47.894475 list index out of range
+INFO:__main__:2024-06-11 17:03:49.930074 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:04:12.158898 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:04:17.097288 Getting cover image of book
+INFO:__main__:2024-06-11 17:04:18.193401 Getting number of pages of book
+INFO:__main__:2024-06-11 17:04:20.486372 Google Books author scrape
+INFO:__main__:2024-06-11 17:04:23.500896 Attempting to get author image
+ERROR:__main__:2024-06-11 17:04:23.500896 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:04:23.500896 Attempting to get author image
+ERROR:__main__:2024-06-11 17:04:23.500896 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:04:23.500896 list index out of range
+INFO:__main__:2024-06-11 17:04:25.533895 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:08:51.745851 'NoneType' object has no attribute 'find_all'
+INFO:__main__:2024-06-11 17:08:54.663296 Getting cover image of book
+INFO:__main__:2024-06-11 17:08:56.020906 Getting number of pages of book
+INFO:__main__:2024-06-11 17:08:56.814814 Google Books author scrape
+INFO:__main__:2024-06-11 17:09:01.021972 Attempting to get author image
+ERROR:__main__:2024-06-11 17:09:01.021972 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:09:01.021972 Attempting to get author image
+ERROR:__main__:2024-06-11 17:09:01.021972 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:09:01.021972 list index out of range
+INFO:__main__:2024-06-11 17:09:03.049585 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:09:23.128693 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 17:09:30.861187 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:09:36.146575 Getting cover image of book
+INFO:__main__:2024-06-11 17:09:37.529014 Getting number of pages of book
+INFO:__main__:2024-06-11 17:09:38.342435 Google Books author scrape
+INFO:__main__:2024-06-11 17:09:42.142352 Attempting to get author image
+ERROR:__main__:2024-06-11 17:09:42.143352 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:09:42.143352 Attempting to get author image
+ERROR:__main__:2024-06-11 17:09:42.143352 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:09:42.143352 list index out of range
+INFO:__main__:2024-06-11 17:09:44.182769 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:18:21.571595 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:18:26.834968 Getting cover image of book
+INFO:__main__:2024-06-11 17:18:27.939353 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:18:28.630198 'publisher'
+INFO:__main__:2024-06-11 17:18:28.630198 Google Books author scrape
+INFO:__main__:2024-06-11 17:18:31.879809 Attempting to get author image
+ERROR:__main__:2024-06-11 17:18:31.879809 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:18:31.879809 Attempting to get author image
+ERROR:__main__:2024-06-11 17:18:31.879809 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:18:31.879809 list index out of range
+INFO:__main__:2024-06-11 17:18:33.902599 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:18:51.030859 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:18:56.230766 Getting cover image of book
+INFO:__main__:2024-06-11 17:18:57.338178 Getting number of pages of book
+INFO:__main__:2024-06-11 17:18:58.081045 Google Books author scrape
+INFO:__main__:2024-06-11 17:19:02.258379 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:19:04.472527 Attempting to get author image
+ERROR:__main__:2024-06-11 17:19:04.472527 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:19:04.473526 list index out of range
+INFO:__main__:2024-06-11 17:19:06.522355 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:23:34.895756 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:23:40.123698 Getting cover image of book
+INFO:__main__:2024-06-11 17:23:41.233839 Getting number of pages of book
+INFO:__main__:2024-06-11 17:23:41.941480 Google Books author scrape
+INFO:__main__:2024-06-11 17:23:45.078300 Attempting to get author image
+ERROR:__main__:2024-06-11 17:23:45.078300 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:23:45.078300 Attempting to get author image
+ERROR:__main__:2024-06-11 17:23:45.078300 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:23:45.079299 list index out of range
+INFO:__main__:2024-06-11 17:23:47.106876 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 17:24:11.427764 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:24:16.720165 Getting cover image of book
+INFO:__main__:2024-06-11 17:24:17.829924 Getting number of pages of book
+INFO:__main__:2024-06-11 17:24:18.595383 Google Books author scrape
+INFO:__main__:2024-06-11 17:24:22.256780 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:24:26.513708 Attempting to get author image
+ERROR:__main__:2024-06-11 17:24:26.513708 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:24:26.513708 list index out of range
+INFO:__main__:2024-06-11 17:24:28.557337 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:24:48.960697 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:24:53.887140 Getting cover image of book
+INFO:__main__:2024-06-11 17:24:55.050643 Getting number of pages of book
+WARNING:__main__:2024-06-11 17:24:55.052640 No number of pages found!
+ERROR:__main__:2024-06-11 17:24:55.715956 'items'
+ERROR:__main__:2024-06-11 17:24:55.715956 'items'
+INFO:__main__:2024-06-11 17:24:56.843716 Getting cover image of book
+INFO:__main__:2024-06-11 17:24:58.217687 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:24:58.944757 'categories'
+INFO:__main__:2024-06-11 17:24:58.944757 Google Books author scrape
+INFO:__main__:2024-06-11 17:25:02.197579 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:25:04.047280 Attempting to get author image
+ERROR:__main__:2024-06-11 17:25:04.048281 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:25:04.048281 list index out of range
+INFO:__main__:2024-06-11 17:25:06.076153 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:25:27.883296 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:25:33.846423 Getting cover image of book
+INFO:__main__:2024-06-11 17:25:35.007837 Getting number of pages of book
+WARNING:__main__:2024-06-11 17:25:35.009837 No number of pages found!
+ERROR:__main__:2024-06-11 17:25:35.629157 'items'
+ERROR:__main__:2024-06-11 17:25:35.629157 'items'
+INFO:__main__:2024-06-11 17:25:36.753583 Getting cover image of book
+INFO:__main__:2024-06-11 17:25:38.108896 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:25:38.729377 'items'
+ERROR:__main__:2024-06-11 17:25:38.729377 'items'
+INFO:__main__:2024-06-11 17:25:39.624504 Getting cover image of book
+INFO:__main__:2024-06-11 17:25:40.720155 Getting number of pages of book
+INFO:__main__:2024-06-11 17:25:41.473293 Google Books author scrape
+INFO:__main__:2024-06-11 17:25:44.444400 Attempting to get author image
+ERROR:__main__:2024-06-11 17:25:44.444400 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:25:44.444400 list index out of range
+INFO:__main__:2024-06-11 17:25:44.444400 Attempting to get author image
+ERROR:__main__:2024-06-11 17:25:44.444400 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:25:44.445400 list index out of range
+INFO:__main__:2024-06-11 17:25:44.445400 Attempting to get author image
+ERROR:__main__:2024-06-11 17:25:44.445400 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:25:44.445400 list index out of range
+INFO:__main__:2024-06-11 17:25:44.445400 Attempting to get author image
+ERROR:__main__:2024-06-11 17:25:44.445400 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:25:44.445400 list index out of range
+INFO:__main__:2024-06-11 17:25:46.488491 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:26:02.487719 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 17:26:11.319277 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 17:26:19.236994 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:26:24.483933 Getting cover image of book
+INFO:__main__:2024-06-11 17:26:25.584837 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:26:26.286389 'publisher'
+INFO:__main__:2024-06-11 17:26:26.286389 Google Books author scrape
+INFO:__main__:2024-06-11 17:26:29.948541 Attempting to get author image
+ERROR:__main__:2024-06-11 17:26:29.948541 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:26:29.948541 Attempting to get author image
+ERROR:__main__:2024-06-11 17:26:29.948541 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:26:29.948541 list index out of range
+INFO:__main__:2024-06-11 17:26:31.974907 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:26:52.473768 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:26:58.666340 Getting cover image of book
+INFO:__main__:2024-06-11 17:26:59.757676 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:27:00.481528 'publisher'
+INFO:__main__:2024-06-11 17:27:00.481528 Google Books author scrape
+INFO:__main__:2024-06-11 17:27:03.706001 Attempting to get author image
+ERROR:__main__:2024-06-11 17:27:03.706001 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:27:03.706001 list index out of range
+INFO:__main__:2024-06-11 17:27:03.706001 Attempting to get author image
+ERROR:__main__:2024-06-11 17:27:03.706001 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:27:03.706001 list index out of range
+INFO:__main__:2024-06-11 17:27:05.735798 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:27:28.691086 'NoneType' object has no attribute 'get_text'
 INFO:__main__:New author photo added
-INFO:__main__:2024-06-11 11:08:02.530556 Getting cover image of book
-INFO:__main__:2024-06-11 11:08:03.615557 Getting number of pages of book
-INFO:__main__:2024-06-11 11:08:04.311557 Google Books author scrape
-INFO:__main__:2024-06-11 11:08:07.927596 Attempting to get author image
-ERROR:__main__:2024-06-11 11:08:07.927596 list index out of range
+INFO:__main__:2024-06-11 17:27:33.745502 Getting cover image of book
+WARNING:__main__:2024-06-11 17:27:33.745502 No cover found!
+INFO:__main__:2024-06-11 17:27:33.745502 Getting number of pages of book
+WARNING:__main__:2024-06-11 17:27:33.747501 No number of pages found!
+ERROR:__main__:2024-06-11 17:27:34.477243 'categories'
+INFO:__main__:2024-06-11 17:27:34.477243 Google Books author scrape
+INFO:__main__:2024-06-11 17:27:38.261710 Attempting to get author image
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:08:07.927596 list index out of range
-INFO:__main__:2024-06-11 11:08:07.927596 Attempting to get author image
-ERROR:__main__:2024-06-11 11:08:07.927596 list index out of range
+INFO:__main__:2024-06-11 17:27:40.461264 Attempting to get author image
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:08:07.927596 list index out of range
-INFO:__main__:2024-06-11 11:08:09.970606 Goodreads author scrape
-ERROR:__main__:2024-06-11 11:08:25.288117 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:27:44.775877 Attempting to get author image
+ERROR:__main__:2024-06-11 17:27:44.775877 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:27:44.775877 list index out of range
+INFO:__main__:2024-06-11 17:27:46.815055 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:28:08.087965 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 17:28:15.491828 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:28:20.696921 Getting cover image of book
+INFO:__main__:2024-06-11 17:28:21.797817 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:28:22.485210 'categories'
+INFO:__main__:2024-06-11 17:28:22.486207 Google Books author scrape
+INFO:__main__:2024-06-11 17:28:25.560012 Attempting to get author image
+ERROR:__main__:2024-06-11 17:28:25.560012 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:28:25.560012 Attempting to get author image
+ERROR:__main__:2024-06-11 17:28:25.560012 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:28:25.560012 list index out of range
+INFO:__main__:2024-06-11 17:28:27.605232 Goodreads author scrape
+ERROR:__main__:2024-06-11 17:28:49.038027 'NoneType' object is not subscriptable
+INFO:__main__:2024-06-11 17:28:50.166696 Getting cover image of book
+INFO:__main__:2024-06-11 17:28:51.290225 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:28:52.073917 'categories'
+INFO:__main__:2024-06-11 17:28:52.073917 Google Books author scrape
+INFO:__main__:2024-06-11 17:28:55.581159 Attempting to get author image
+ERROR:__main__:2024-06-11 17:28:55.582160 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:28:55.582160 Attempting to get author image
+ERROR:__main__:2024-06-11 17:28:55.582160 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:28:55.582160 list index out of range
+INFO:__main__:2024-06-11 17:28:57.610788 Goodreads author scrape
+INFO:__main__:2024-06-11 17:29:23.160277 Getting cover image of book
+INFO:__main__:2024-06-11 17:29:24.291954 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:29:25.012670 'categories'
+INFO:__main__:2024-06-11 17:29:25.012670 Google Books author scrape
+INFO:__main__:2024-06-11 17:29:28.853807 Attempting to get author image
+ERROR:__main__:2024-06-11 17:29:28.854807 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:29:28.854807 Attempting to get author image
+ERROR:__main__:2024-06-11 17:29:28.854807 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:29:28.854807 list index out of range
+INFO:__main__:2024-06-11 17:29:30.879339 Goodreads author scrape
+INFO:__main__:2024-06-11 17:29:59.156445 Getting cover image of book
+INFO:__main__:2024-06-11 17:30:00.286896 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:30:00.971002 'categories'
+INFO:__main__:2024-06-11 17:30:00.971002 Google Books author scrape
+INFO:__main__:2024-06-11 17:30:04.464576 Attempting to get author image
+ERROR:__main__:2024-06-11 17:30:04.464576 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:30:04.464576 Attempting to get author image
+ERROR:__main__:2024-06-11 17:30:04.464576 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:30:04.464576 list index out of range
+INFO:__main__:2024-06-11 17:30:06.504930 Goodreads author scrape
+INFO:__main__:2024-06-11 17:30:31.902225 Getting cover image of book
+INFO:__main__:2024-06-11 17:30:33.020527 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:30:33.721667 'categories'
+INFO:__main__:2024-06-11 17:30:33.721667 Google Books author scrape
+INFO:__main__:2024-06-11 17:30:37.497380 Attempting to get author image
+ERROR:__main__:2024-06-11 17:30:37.497380 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:30:37.497380 Attempting to get author image
+ERROR:__main__:2024-06-11 17:30:37.497380 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:30:37.497380 list index out of range
+INFO:__main__:2024-06-11 17:30:39.528448 Goodreads author scrape
+INFO:__main__:2024-06-11 17:35:09.116217 Getting cover image of book
+INFO:__main__:2024-06-11 17:35:10.209885 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:35:10.906737 'categories'
+INFO:__main__:2024-06-11 17:35:10.907737 Google Books author scrape
+INFO:__main__:2024-06-11 17:35:14.565453 Attempting to get author image
+ERROR:__main__:2024-06-11 17:35:14.566453 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:35:14.566453 Attempting to get author image
+ERROR:__main__:2024-06-11 17:35:14.566453 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:35:14.566453 list index out of range
+INFO:__main__:2024-06-11 17:35:16.610581 Goodreads author scrape
+INFO:__main__:2024-06-11 17:39:49.356817 Getting cover image of book
+INFO:__main__:2024-06-11 17:39:50.457113 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:39:51.302061 'categories'
+INFO:__main__:2024-06-11 17:39:51.302061 Google Books author scrape
+INFO:__main__:2024-06-11 17:39:55.231022 Attempting to get author image
+ERROR:__main__:2024-06-11 17:39:55.231022 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:39:55.232023 Attempting to get author image
+ERROR:__main__:2024-06-11 17:39:55.232023 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:39:55.232023 list index out of range
+INFO:__main__:2024-06-11 17:39:57.265850 Goodreads author scrape
+INFO:__main__:2024-06-11 17:44:29.454825 Getting cover image of book
+INFO:__main__:2024-06-11 17:44:30.620846 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:44:31.301605 'categories'
+INFO:__main__:2024-06-11 17:44:31.301605 Google Books author scrape
+INFO:__main__:2024-06-11 17:44:35.138845 Attempting to get author image
+ERROR:__main__:2024-06-11 17:44:35.138845 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:44:35.138845 Attempting to get author image
+ERROR:__main__:2024-06-11 17:44:35.139845 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:44:35.139845 list index out of range
+INFO:__main__:2024-06-11 17:44:37.180845 Goodreads author scrape
+INFO:__main__:2024-06-11 17:49:12.480927 Getting cover image of book
+INFO:__main__:2024-06-11 17:49:13.584587 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:49:14.286521 'categories'
+INFO:__main__:2024-06-11 17:49:14.286521 Google Books author scrape
+INFO:__main__:2024-06-11 17:49:17.511367 Attempting to get author image
+ERROR:__main__:2024-06-11 17:49:17.511367 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:49:17.511367 Attempting to get author image
+ERROR:__main__:2024-06-11 17:49:17.511367 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:49:17.511367 list index out of range
+INFO:__main__:2024-06-11 17:49:19.534491 Goodreads author scrape
+INFO:__main__:2024-06-11 17:49:43.597816 Getting cover image of book
+INFO:__main__:2024-06-11 17:49:44.724357 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:49:45.400119 'categories'
+INFO:__main__:2024-06-11 17:49:45.400119 Google Books author scrape
+INFO:__main__:2024-06-11 17:49:48.445082 Attempting to get author image
+ERROR:__main__:2024-06-11 17:49:48.445082 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:49:48.445082 Attempting to get author image
+ERROR:__main__:2024-06-11 17:49:48.445082 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:49:48.445082 list index out of range
+INFO:__main__:2024-06-11 17:49:51.500405 Goodreads author scrape
+INFO:__main__:2024-06-11 17:50:17.838920 Getting cover image of book
+INFO:__main__:2024-06-11 17:50:19.214808 Getting number of pages of book
+ERROR:__main__:2024-06-11 17:50:19.912134 'categories'
+INFO:__main__:2024-06-11 17:50:19.912134 Google Books author scrape
+INFO:__main__:2024-06-11 17:50:23.552081 Attempting to get author image
+ERROR:__main__:2024-06-11 17:50:23.552081 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:50:23.552081 Attempting to get author image
+ERROR:__main__:2024-06-11 17:50:23.552081 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:50:23.552081 list index out of range
+INFO:__main__:2024-06-11 17:50:25.575073 Goodreads author scrape
+INFO:__main__:2024-06-11 17:54:57.262537 Getting cover image of book
+INFO:__main__:2024-06-11 17:54:58.362577 Getting number of pages of book
+INFO:__main__:2024-06-11 17:54:59.025149 Google Books author scrape
+INFO:__main__:2024-06-11 17:55:02.435774 Attempting to get author image
+ERROR:__main__:2024-06-11 17:55:02.435774 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:55:02.435774 list index out of range
+INFO:__main__:2024-06-11 17:55:02.435774 Attempting to get author image
+ERROR:__main__:2024-06-11 17:55:02.435774 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:55:02.436775 list index out of range
+INFO:__main__:2024-06-11 17:55:02.436775 Attempting to get author image
+ERROR:__main__:2024-06-11 17:55:02.436775 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:55:02.436775 list index out of range
+INFO:__main__:2024-06-11 17:55:02.436775 Attempting to get author image
+ERROR:__main__:2024-06-11 17:55:02.436775 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:55:02.436775 list index out of range
+INFO:__main__:2024-06-11 17:55:04.465379 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 17:55:23.876236 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 17:55:31.814451 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 17:55:40.296689 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 17:55:46.522735 Getting cover image of book
+INFO:__main__:2024-06-11 17:55:47.892582 Getting number of pages of book
+INFO:__main__:2024-06-11 17:55:48.664157 Google Books author scrape
+INFO:__main__:2024-06-11 17:55:52.962844 Attempting to get author image
+ERROR:__main__:2024-06-11 17:55:52.962844 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 17:55:52.962844 Attempting to get author image
+ERROR:__main__:2024-06-11 17:55:52.962844 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 17:55:52.962844 list index out of range
+INFO:__main__:2024-06-11 17:55:55.008116 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:00:27.483624 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:00:33.709641 Getting cover image of book
+INFO:__main__:2024-06-11 18:00:35.077175 Getting number of pages of book
+INFO:__main__:2024-06-11 18:00:35.768339 Google Books author scrape
+INFO:__main__:2024-06-11 18:00:39.123208 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:00:41.126259 Attempting to get author image
+ERROR:__main__:2024-06-11 18:00:41.126259 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:00:41.126259 list index out of range
+INFO:__main__:2024-06-11 18:00:44.164074 Goodreads author scrape
+INFO:__main__:New author bio added
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:01:17.642455 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:01:26.144633 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:01:32.366621 Getting cover image of book
+INFO:__main__:2024-06-11 18:01:33.471472 Getting number of pages of book
+INFO:__main__:2024-06-11 18:01:34.142901 Google Books author scrape
+INFO:__main__:2024-06-11 18:01:37.253351 Attempting to get author image
+ERROR:__main__:2024-06-11 18:01:37.253351 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:01:37.253351 list index out of range
+INFO:__main__:2024-06-11 18:01:37.253351 Attempting to get author image
+ERROR:__main__:2024-06-11 18:01:37.253351 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:01:37.253351 list index out of range
+INFO:__main__:2024-06-11 18:01:39.278622 Goodreads author scrape
+ERROR:__main__:
+INFO:__main__:2024-06-11 18:06:16.228964 Getting cover image of book
+INFO:__main__:2024-06-11 18:06:17.344615 Getting number of pages of book
+INFO:__main__:2024-06-11 18:06:18.009291 Google Books author scrape
+INFO:__main__:2024-06-11 18:06:22.904030 Attempting to get author image
+ERROR:__main__:2024-06-11 18:06:22.904030 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:06:22.904030 Attempting to get author image
+ERROR:__main__:2024-06-11 18:06:22.904030 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:06:22.904030 list index out of range
+INFO:__main__:2024-06-11 18:06:22.904030 Attempting to get author image
+ERROR:__main__:2024-06-11 18:06:22.904030 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:06:22.904030 list index out of range
+INFO:__main__:2024-06-11 18:06:22.904030 Attempting to get author image
+ERROR:__main__:2024-06-11 18:06:22.904030 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:06:22.904030 list index out of range
+INFO:__main__:2024-06-11 18:06:24.940821 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:06:48.418939 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 18:06:56.730330 'NoneType' object has no attribute 'get_text'
 INFO:__main__:New author photo added
-INFO:__main__:2024-06-11 11:08:31.314727 Getting cover image of book
-INFO:__main__:2024-06-11 11:08:32.404728 Getting number of pages of book
-ERROR:__main__:2024-06-11 11:08:33.023739 'items'
-ERROR:__main__:2024-06-11 11:08:33.023739 'items'
-ERROR:__main__:2024-06-11 11:08:33.023739 'NoneType' object is not subscriptable
-INFO:__main__:2024-06-11 11:08:33.876738 Getting cover image of book
-INFO:__main__:2024-06-11 11:08:34.995739 Getting number of pages of book
-ERROR:__main__:2024-06-11 11:08:35.643755 'categories'
-INFO:__main__:2024-06-11 11:08:35.643755 Google Books author scrape
-INFO:__main__:2024-06-11 11:08:39.380779 Attempting to get author image
-ERROR:__main__:2024-06-11 11:08:39.380779 list index out of range
+ERROR:__main__:2024-06-11 18:07:03.671968 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:07:08.959752 Getting cover image of book
+INFO:__main__:2024-06-11 18:07:10.117010 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:07:10.815957 'publisher'
+INFO:__main__:2024-06-11 18:07:10.815957 Google Books author scrape
+INFO:__main__:2024-06-11 18:07:15.727202 Attempting to get author image
+ERROR:__main__:2024-06-11 18:07:15.727202 list index out of range
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:08:39.380779 list index out of range
-INFO:__main__:2024-06-11 11:08:39.380779 Attempting to get author image
-ERROR:__main__:2024-06-11 11:08:39.380779 list index out of range
+INFO:__main__:2024-06-11 18:07:15.727202 Attempting to get author image
+ERROR:__main__:2024-06-11 18:07:15.727202 list index out of range
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:08:39.380779 list index out of range
-INFO:__main__:2024-06-11 11:08:41.406412 Goodreads author scrape
-ERROR:__main__:2024-06-11 11:08:55.161763 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 18:07:15.727202 list index out of range
+INFO:__main__:2024-06-11 18:07:17.752380 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:07:35.274300 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:07:40.233163 Getting cover image of book
+INFO:__main__:2024-06-11 18:07:41.326306 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:07:41.947513 'items'
+ERROR:__main__:2024-06-11 18:07:41.947513 'items'
+INFO:__main__:2024-06-11 18:07:43.083379 Getting cover image of book
+INFO:__main__:2024-06-11 18:07:44.196531 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:07:44.794714 'items'
+ERROR:__main__:2024-06-11 18:07:44.794714 'items'
+INFO:__main__:2024-06-11 18:07:45.646770 Getting cover image of book
+INFO:__main__:2024-06-11 18:07:47.004685 Getting number of pages of book
+WARNING:__main__:2024-06-11 18:07:47.006685 No number of pages found!
+ERROR:__main__:2024-06-11 18:07:47.674543 'categories'
+INFO:__main__:2024-06-11 18:07:47.674543 Google Books author scrape
+INFO:__main__:2024-06-11 18:07:51.600428 Attempting to get author image
+ERROR:__main__:2024-06-11 18:07:51.600428 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:07:51.600428 Attempting to get author image
+ERROR:__main__:2024-06-11 18:07:51.600428 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:07:51.600428 list index out of range
+INFO:__main__:2024-06-11 18:07:53.628310 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:08:12.531859 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:08:17.474405 Getting cover image of book
+INFO:__main__:2024-06-11 18:08:18.615679 Getting number of pages of book
+WARNING:__main__:2024-06-11 18:08:18.617678 No number of pages found!
+INFO:__main__:2024-06-11 18:08:19.388216 Google Books author scrape
+INFO:__main__:2024-06-11 18:08:23.001388 Attempting to get author image
+ERROR:__main__:2024-06-11 18:08:23.002388 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:08:23.002388 Attempting to get author image
+ERROR:__main__:2024-06-11 18:08:23.002388 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:08:23.002388 list index out of range
+INFO:__main__:2024-06-11 18:08:25.034835 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:08:43.997573 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 18:08:48.090162 'NoneType' object is not subscriptable
+INFO:__main__:2024-06-11 18:08:49.208906 Getting cover image of book
+INFO:__main__:2024-06-11 18:08:50.339550 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:08:51.059156 'categories'
+INFO:__main__:2024-06-11 18:08:51.059156 Google Books author scrape
+INFO:__main__:2024-06-11 18:08:54.046078 Attempting to get author image
+ERROR:__main__:2024-06-11 18:08:54.046078 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:08:54.046078 Attempting to get author image
+ERROR:__main__:2024-06-11 18:08:54.046078 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:08:54.046078 list index out of range
+INFO:__main__:2024-06-11 18:08:56.068661 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:09:15.336174 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:09:21.556455 Getting cover image of book
+INFO:__main__:2024-06-11 18:09:22.688462 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:09:23.423196 'categories'
+INFO:__main__:2024-06-11 18:09:23.424195 Google Books author scrape
+INFO:__main__:2024-06-11 18:09:26.967121 Attempting to get author image
+ERROR:__main__:2024-06-11 18:09:26.967121 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:09:26.968121 Attempting to get author image
+ERROR:__main__:2024-06-11 18:09:26.968121 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:09:26.968121 list index out of range
+INFO:__main__:2024-06-11 18:09:29.001808 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:09:49.500439 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:09:54.448082 Getting cover image of book
+INFO:__main__:2024-06-11 18:09:55.549832 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:09:56.244617 'publisher'
+INFO:__main__:2024-06-11 18:09:56.244617 Google Books author scrape
+INFO:__main__:2024-06-11 18:09:59.952141 Attempting to get author image
+ERROR:__main__:2024-06-11 18:09:59.952141 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:09:59.952141 list index out of range
+INFO:__main__:2024-06-11 18:09:59.952141 Attempting to get author image
+ERROR:__main__:2024-06-11 18:09:59.952141 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:09:59.952141 list index out of range
+INFO:__main__:2024-06-11 18:10:01.989341 Goodreads author scrape
+INFO:__main__:New author bio added
 INFO:__main__:New author photo added
-INFO:__main__:2024-06-11 11:09:00.125413 Getting cover image of book
-INFO:__main__:2024-06-11 11:09:01.227451 Getting number of pages of book
-ERROR:__main__:2024-06-11 11:09:01.891448 'categories'
-INFO:__main__:2024-06-11 11:09:01.891448 Google Books author scrape
-INFO:__main__:2024-06-11 11:09:05.352300 Attempting to get author image
-ERROR:__main__:2024-06-11 11:09:05.352300 list index out of range
+INFO:__main__:2024-06-11 18:10:29.109843 Getting cover image of book
+INFO:__main__:2024-06-11 18:10:30.514282 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:10:31.197232 'publisher'
+INFO:__main__:2024-06-11 18:10:31.198231 Google Books author scrape
+INFO:__main__:2024-06-11 18:10:34.178684 Attempting to get author image
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:09:05.352300 list index out of range
-INFO:__main__:2024-06-11 11:09:05.352300 Attempting to get author image
-ERROR:__main__:2024-06-11 11:09:05.352300 list index out of range
+INFO:__main__:2024-06-11 18:10:35.728233 Attempting to get author image
+ERROR:__main__:2024-06-11 18:10:35.728233 list index out of range
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:09:05.352300 list index out of range
-INFO:__main__:2024-06-11 11:09:07.391818 Goodreads author scrape
-ERROR:__main__:2024-06-11 11:09:23.205409 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 18:10:35.728233 list index out of range
+INFO:__main__:2024-06-11 18:10:37.766775 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:10:56.785182 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:11:03.416424 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:11:10.519773 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:11:16.769209 Getting cover image of book
+INFO:__main__:2024-06-11 18:11:17.860464 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:11:18.589238 'publisher'
+INFO:__main__:2024-06-11 18:11:18.589238 Google Books author scrape
+INFO:__main__:2024-06-11 18:11:22.024261 Attempting to get author image
+ERROR:__main__:2024-06-11 18:11:22.024261 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:11:22.024261 list index out of range
+INFO:__main__:2024-06-11 18:11:22.024261 Attempting to get author image
+ERROR:__main__:2024-06-11 18:11:22.024261 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:11:22.024261 list index out of range
+INFO:__main__:2024-06-11 18:11:24.048750 Goodreads author scrape
+INFO:__main__:New author bio added
 INFO:__main__:New author photo added
-INFO:__main__:2024-06-11 11:09:28.170439 Getting cover image of book
-INFO:__main__:2024-06-11 11:09:29.594462 Getting number of pages of book
-WARNING:__main__:2024-06-11 11:09:29.596461 No number of pages found!
-ERROR:__main__:2024-06-11 11:09:30.244461 'publisher'
-INFO:__main__:2024-06-11 11:09:30.245461 Google Books author scrape
-INFO:__main__:2024-06-11 11:09:33.660484 Attempting to get author image
-ERROR:__main__:2024-06-11 11:09:33.660484 list index out of range
+INFO:__main__:2024-06-11 18:11:55.277718 Getting cover image of book
+INFO:__main__:2024-06-11 18:11:56.654333 Getting number of pages of book
+INFO:__main__:2024-06-11 18:11:57.405651 Google Books author scrape
+INFO:__main__:2024-06-11 18:12:01.411008 Attempting to get author image
 INFO:__main__:Attempting to get author bio
-INFO:__main__:2024-06-11 11:09:33.660484 Attempting to get author image
-ERROR:__main__:2024-06-11 11:09:33.660484 list index out of range
+INFO:__main__:2024-06-11 18:12:03.711212 Attempting to get author image
+ERROR:__main__:2024-06-11 18:12:03.711212 list index out of range
 INFO:__main__:Attempting to get author bio
-INFO:__main__:2024-06-11 11:09:33.660484 Attempting to get author image
-ERROR:__main__:2024-06-11 11:09:33.660484 list index out of range
+ERROR:__main__:2024-06-11 18:12:03.711212 list index out of range
+INFO:__main__:2024-06-11 18:12:05.746181 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:16:36.802903 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:16:42.024430 Getting cover image of book
+INFO:__main__:2024-06-11 18:16:43.130179 Getting number of pages of book
+INFO:__main__:2024-06-11 18:16:43.815633 Google Books author scrape
+INFO:__main__:2024-06-11 18:16:47.554357 Attempting to get author image
 INFO:__main__:Attempting to get author bio
-ERROR:__main__:2024-06-11 11:09:33.660484 list index out of range
-INFO:__main__:2024-06-11 11:09:35.698801 Goodreads author scrape
+INFO:__main__:2024-06-11 18:16:49.444223 Attempting to get author image
+ERROR:__main__:2024-06-11 18:16:49.444223 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:16:49.444223 list index out of range
+INFO:__main__:2024-06-11 18:16:51.480658 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:17:11.617698 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:17:16.854796 Getting cover image of book
+INFO:__main__:2024-06-11 18:17:17.946797 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:17:18.617561 'publisher'
+INFO:__main__:2024-06-11 18:17:18.617561 Google Books author scrape
+INFO:__main__:2024-06-11 18:17:22.385952 Attempting to get author image
+ERROR:__main__:2024-06-11 18:17:22.385952 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:17:22.385952 list index out of range
+INFO:__main__:2024-06-11 18:17:22.385952 Attempting to get author image
+ERROR:__main__:2024-06-11 18:17:22.385952 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:17:22.385952 list index out of range
+INFO:__main__:2024-06-11 18:17:24.427560 Goodreads author scrape
+ERROR:__main__:
+INFO:__main__:2024-06-11 18:17:49.297733 Getting cover image of book
+INFO:__main__:2024-06-11 18:17:50.706981 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:17:51.377833 'categories'
+INFO:__main__:2024-06-11 18:17:51.377833 Google Books author scrape
+INFO:__main__:2024-06-11 18:17:54.729122 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:17:58.159376 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:18:02.468810 list index out of range
+INFO:__main__:2024-06-11 18:18:02.468810 Attempting to get author image
+ERROR:__main__:2024-06-11 18:18:02.468810 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:18:02.469810 list index out of range
+INFO:__main__:2024-06-11 18:18:04.519849 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:18:22.710297 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 18:18:31.322567 'NoneType' object has no attribute 'find'
+INFO:__main__:2024-06-11 18:18:36.250529 Getting cover image of book
+INFO:__main__:2024-06-11 18:18:37.656918 Getting number of pages of book
+INFO:__main__:2024-06-11 18:18:38.340310 Google Books author scrape
+INFO:__main__:2024-06-11 18:18:41.684678 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:18:45.927007 Attempting to get author image
+ERROR:__main__:2024-06-11 18:18:45.927007 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:18:45.927007 list index out of range
+INFO:__main__:2024-06-11 18:18:45.927007 Attempting to get author image
+ERROR:__main__:2024-06-11 18:18:45.927007 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:18:45.927007 list index out of range
+INFO:__main__:2024-06-11 18:18:48.978446 Goodreads author scrape
+INFO:__main__:New author bio added
+ERROR:__main__:2024-06-11 18:19:18.219626 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:19:24.498722 Getting cover image of book
+INFO:__main__:2024-06-11 18:19:25.593331 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:19:26.305775 'publisher'
+INFO:__main__:2024-06-11 18:19:26.305775 Google Books author scrape
+INFO:__main__:2024-06-11 18:19:29.808012 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:19:33.422393 Attempting to get author image
+ERROR:__main__:2024-06-11 18:19:33.422393 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:19:33.422393 list index out of range
+INFO:__main__:2024-06-11 18:19:35.454781 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:19:52.738088 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:19:58.214030 Getting cover image of book
+INFO:__main__:2024-06-11 18:19:59.304285 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:20:00.047868 'publisher'
+INFO:__main__:2024-06-11 18:20:00.047868 Google Books author scrape
+INFO:__main__:2024-06-11 18:20:03.466014 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:20:05.729814 Attempting to get author image
+ERROR:__main__:2024-06-11 18:20:05.729814 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:20:05.729814 list index out of range
+INFO:__main__:2024-06-11 18:20:07.777228 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:24:43.837603 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:24:48.848173 Getting cover image of book
+INFO:__main__:2024-06-11 18:24:49.945146 Getting number of pages of book
+INFO:__main__:2024-06-11 18:24:50.617827 Google Books author scrape
+INFO:__main__:2024-06-11 18:24:53.644007 Attempting to get author image
+ERROR:__main__:2024-06-11 18:24:53.644007 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:24:53.644007 list index out of range
+INFO:__main__:2024-06-11 18:24:53.644007 Attempting to get author image
+ERROR:__main__:2024-06-11 18:24:53.644007 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:24:53.644007 list index out of range
+INFO:__main__:2024-06-11 18:24:55.668887 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:25:14.716008 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:25:19.890628 Getting cover image of book
+INFO:__main__:2024-06-11 18:25:21.253181 Getting number of pages of book
+INFO:__main__:2024-06-11 18:25:21.936874 Google Books author scrape
+INFO:__main__:2024-06-11 18:25:26.100480 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:25:29.436492 Attempting to get author image
+ERROR:__main__:2024-06-11 18:25:29.437492 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:25:29.437492 list index out of range
+INFO:__main__:2024-06-11 18:25:31.481767 Goodreads author scrape
+INFO:__main__:2024-06-11 18:30:05.815863 Getting cover image of book
+INFO:__main__:2024-06-11 18:30:06.911094 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:30:07.616800 'publisher'
+INFO:__main__:2024-06-11 18:30:07.616800 Google Books author scrape
+INFO:__main__:2024-06-11 18:30:11.366022 Attempting to get author image
+ERROR:__main__:2024-06-11 18:30:11.366022 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:30:11.366022 Attempting to get author image
+ERROR:__main__:2024-06-11 18:30:11.366022 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:30:11.366022 list index out of range
+INFO:__main__:2024-06-11 18:30:13.391363 Goodreads author scrape
+INFO:__main__:New author bio added
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 18:38:55.140680 Getting cover image of book
+INFO:__main__:2024-06-11 18:38:56.496099 Getting number of pages of book
+INFO:__main__:2024-06-11 18:38:57.287732 Google Books author scrape
+INFO:__main__:2024-06-11 18:39:00.741968 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:39:02.726003 Attempting to get author image
+ERROR:__main__:2024-06-11 18:39:02.726003 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:39:02.726003 list index out of range
+INFO:__main__:2024-06-11 18:39:04.773039 Goodreads author scrape
+INFO:__main__:New author bio added
+INFO:__main__:2024-06-11 18:39:27.620204 Getting cover image of book
+INFO:__main__:2024-06-11 18:39:28.713688 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:39:29.398725 'categories'
+INFO:__main__:2024-06-11 18:39:29.399722 Google Books author scrape
+INFO:__main__:2024-06-11 18:39:32.492257 Attempting to get author image
+ERROR:__main__:2024-06-11 18:39:32.492257 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:39:32.492257 Attempting to get author image
+ERROR:__main__:2024-06-11 18:39:32.492257 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:39:32.492257 list index out of range
+INFO:__main__:2024-06-11 18:39:34.528031 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:44:06.963875 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:44:14.592878 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:44:19.824115 Getting cover image of book
+INFO:__main__:2024-06-11 18:44:20.924718 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:44:21.685372 'publisher'
+INFO:__main__:2024-06-11 18:44:21.685372 Google Books author scrape
+INFO:__main__:2024-06-11 18:44:24.565427 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:44:25.944648 Attempting to get author image
+ERROR:__main__:2024-06-11 18:44:25.944648 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:44:25.944648 list index out of range
+INFO:__main__:2024-06-11 18:44:27.969660 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:44:40.453980 'NoneType' object has no attribute 'find_all'
+INFO:__main__:2024-06-11 18:44:44.631354 Getting cover image of book
+INFO:__main__:2024-06-11 18:44:45.731980 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:44:46.405178 'publisher'
+INFO:__main__:2024-06-11 18:44:46.405178 Google Books author scrape
+INFO:__main__:2024-06-11 18:44:49.949746 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:44:51.612303 Attempting to get author image
+ERROR:__main__:2024-06-11 18:44:51.612303 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:44:51.612303 list index out of range
+INFO:__main__:2024-06-11 18:44:53.644655 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:45:18.366369 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:45:24.317064 Getting cover image of book
+INFO:__main__:2024-06-11 18:45:25.795209 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:45:26.466347 'publisher'
+INFO:__main__:2024-06-11 18:45:26.466347 Google Books author scrape
+INFO:__main__:2024-06-11 18:45:30.016833 Attempting to get author image
+ERROR:__main__:2024-06-11 18:45:30.017834 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:45:30.017834 list index out of range
+INFO:__main__:2024-06-11 18:45:30.017834 Attempting to get author image
+ERROR:__main__:2024-06-11 18:45:30.017834 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:45:30.017834 list index out of range
+INFO:__main__:2024-06-11 18:45:30.017834 Attempting to get author image
+ERROR:__main__:2024-06-11 18:45:30.017834 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:45:30.017834 list index out of range
+INFO:__main__:2024-06-11 18:45:32.053454 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:45:49.389067 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:45:56.965207 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:46:04.365387 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:46:09.356399 Getting cover image of book
+INFO:__main__:2024-06-11 18:46:10.447420 Getting number of pages of book
+WARNING:__main__:2024-06-11 18:46:10.449417 No number of pages found!
+ERROR:__main__:2024-06-11 18:46:11.086029 'items'
+ERROR:__main__:2024-06-11 18:46:11.086029 'items'
+INFO:__main__:2024-06-11 18:46:12.201915 Getting cover image of book
+INFO:__main__:2024-06-11 18:46:13.571394 Getting number of pages of book
+INFO:__main__:2024-06-11 18:46:14.320064 Google Books author scrape
+INFO:__main__:2024-06-11 18:46:17.670800 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:46:19.631768 list index out of range
+INFO:__main__:2024-06-11 18:46:19.631768 Attempting to get author image
+ERROR:__main__:2024-06-11 18:46:19.631768 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:46:19.631768 list index out of range
+INFO:__main__:2024-06-11 18:46:21.664667 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:46:25.739255 'NoneType' object has no attribute 'find_all'
+INFO:__main__:2024-06-11 18:46:28.631299 Getting cover image of book
+INFO:__main__:2024-06-11 18:46:30.077472 Getting number of pages of book
+WARNING:__main__:2024-06-11 18:46:30.079473 No number of pages found!
+ERROR:__main__:2024-06-11 18:46:30.903542 'publisher'
+INFO:__main__:2024-06-11 18:46:30.903542 Google Books author scrape
+INFO:__main__:2024-06-11 18:46:34.494849 Attempting to get author image
+ERROR:__main__:2024-06-11 18:46:34.494849 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:46:34.495852 Attempting to get author image
+ERROR:__main__:2024-06-11 18:46:34.495852 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:46:34.495852 list index out of range
+INFO:__main__:2024-06-11 18:46:36.536880 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:46:58.576409 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:47:07.159505 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 18:47:15.087723 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:47:21.327236 Getting cover image of book
+INFO:__main__:2024-06-11 18:47:22.472568 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:47:23.139640 'publisher'
+INFO:__main__:2024-06-11 18:47:23.139640 Google Books author scrape
+INFO:__main__:2024-06-11 18:47:27.100901 Attempting to get author image
+ERROR:__main__:2024-06-11 18:47:27.100901 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:47:27.100901 Attempting to get author image
+ERROR:__main__:2024-06-11 18:47:27.100901 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:47:27.100901 list index out of range
+INFO:__main__:2024-06-11 18:47:29.126973 Goodreads author scrape
+INFO:__main__:New author bio added
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 18:52:02.427135 Getting cover image of book
+INFO:__main__:2024-06-11 18:52:03.561162 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:52:04.278630 'categories'
+INFO:__main__:2024-06-11 18:52:04.278630 Google Books author scrape
+INFO:__main__:2024-06-11 18:52:08.012883 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:52:09.676564 list index out of range
+INFO:__main__:2024-06-11 18:52:09.676564 Attempting to get author image
+ERROR:__main__:2024-06-11 18:52:09.676564 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:52:09.676564 list index out of range
+INFO:__main__:2024-06-11 18:52:11.711043 Goodreads author scrape
+ERROR:__main__:2024-06-11 18:52:33.244617 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 18:52:39.453678 Getting cover image of book
+INFO:__main__:2024-06-11 18:52:40.601006 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:52:41.304666 'publisher'
+INFO:__main__:2024-06-11 18:52:41.304666 Google Books author scrape
+INFO:__main__:2024-06-11 18:52:46.169481 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 18:52:47.658955 Attempting to get author image
+ERROR:__main__:2024-06-11 18:52:47.658955 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:52:47.658955 list index out of range
+INFO:__main__:2024-06-11 18:52:49.682215 Goodreads author scrape
+INFO:__main__:New author bio added
+INFO:__main__:2024-06-11 18:57:21.341534 Getting cover image of book
+INFO:__main__:2024-06-11 18:57:22.703113 Getting number of pages of book
+ERROR:__main__:2024-06-11 18:57:23.395742 'publisher'
+INFO:__main__:2024-06-11 18:57:23.395742 Google Books author scrape
+INFO:__main__:2024-06-11 18:57:26.342212 Attempting to get author image
+ERROR:__main__:2024-06-11 18:57:26.342212 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:57:26.342212 list index out of range
+INFO:__main__:2024-06-11 18:57:26.342212 Attempting to get author image
+ERROR:__main__:2024-06-11 18:57:26.342212 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 18:57:26.343213 list index out of range
+INFO:__main__:2024-06-11 18:57:28.374057 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:01:56.522778 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:02:01.727810 Getting cover image of book
+INFO:__main__:2024-06-11 19:02:02.827571 Getting number of pages of book
+INFO:__main__:2024-06-11 19:02:03.496178 Google Books author scrape
+INFO:__main__:2024-06-11 19:02:07.343941 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:02:10.920504 list index out of range
+INFO:__main__:2024-06-11 19:02:10.920504 Attempting to get author image
+ERROR:__main__:2024-06-11 19:02:10.920504 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:02:10.920504 list index out of range
+INFO:__main__:2024-06-11 19:02:13.959339 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:06:40.038744 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 19:06:47.423075 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:06:52.878097 Getting cover image of book
+INFO:__main__:2024-06-11 19:06:53.978162 Getting number of pages of book
+INFO:__main__:2024-06-11 19:06:54.662199 Google Books author scrape
+INFO:__main__:2024-06-11 19:06:57.740929 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:06:59.623449 Attempting to get author image
+ERROR:__main__:2024-06-11 19:06:59.623449 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:06:59.624449 list index out of range
+INFO:__main__:2024-06-11 19:07:01.656531 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:07:23.225359 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:07:29.490233 Getting cover image of book
+INFO:__main__:2024-06-11 19:07:30.576216 Getting number of pages of book
+WARNING:__main__:2024-06-11 19:07:30.578212 No number of pages found!
+ERROR:__main__:2024-06-11 19:07:31.252926 'categories'
+INFO:__main__:2024-06-11 19:07:31.253926 Google Books author scrape
+INFO:__main__:2024-06-11 19:07:35.065905 Attempting to get author image
+ERROR:__main__:2024-06-11 19:07:35.065905 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:07:35.065905 Attempting to get author image
+ERROR:__main__:2024-06-11 19:07:35.065905 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:07:35.065905 list index out of range
+INFO:__main__:2024-06-11 19:07:37.099924 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 19:07:53.391194 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:07:58.604332 Getting cover image of book
+INFO:__main__:2024-06-11 19:07:59.706650 Getting number of pages of book
+INFO:__main__:2024-06-11 19:08:00.412094 Google Books author scrape
+INFO:__main__:2024-06-11 19:08:04.681587 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:08:08.033602 list index out of range
+INFO:__main__:2024-06-11 19:08:08.033602 Attempting to get author image
+ERROR:__main__:2024-06-11 19:08:08.033602 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:08:08.033602 list index out of range
+INFO:__main__:2024-06-11 19:08:10.081236 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:08:28.274760 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:08:33.453124 Getting cover image of book
+INFO:__main__:2024-06-11 19:08:34.544253 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:08:35.248389 'publisher'
+INFO:__main__:2024-06-11 19:08:35.248389 Google Books author scrape
+INFO:__main__:2024-06-11 19:08:38.893566 Attempting to get author image
+ERROR:__main__:2024-06-11 19:08:38.894566 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:08:38.894566 list index out of range
+INFO:__main__:2024-06-11 19:08:38.894566 Attempting to get author image
+ERROR:__main__:2024-06-11 19:08:38.894566 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:08:38.894566 list index out of range
+INFO:__main__:2024-06-11 19:08:40.920575 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:09:00.744168 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 19:09:06.043585 Getting cover image of book
+INFO:__main__:2024-06-11 19:09:07.261517 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:09:07.930658 'publisher'
+INFO:__main__:2024-06-11 19:09:07.930658 Google Books author scrape
+INFO:__main__:2024-06-11 19:09:11.628730 Attempting to get author image
+ERROR:__main__:2024-06-11 19:09:11.628730 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:09:11.628730 list index out of range
+INFO:__main__:2024-06-11 19:09:11.628730 Attempting to get author image
+ERROR:__main__:2024-06-11 19:09:11.628730 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:09:11.628730 list index out of range
+INFO:__main__:2024-06-11 19:09:13.658523 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:13:37.630751 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 19:13:43.922514 Getting cover image of book
+INFO:__main__:2024-06-11 19:13:45.033000 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:13:45.731666 'publisher'
+INFO:__main__:2024-06-11 19:13:45.731666 Google Books author scrape
+INFO:__main__:2024-06-11 19:13:49.564015 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:13:52.973955 Attempting to get author image
+ERROR:__main__:2024-06-11 19:13:52.973955 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:13:52.973955 list index out of range
+INFO:__main__:2024-06-11 19:13:55.012246 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:18:23.884022 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:18:28.833649 Getting cover image of book
+INFO:__main__:2024-06-11 19:18:29.926912 Getting number of pages of book
+INFO:__main__:2024-06-11 19:18:30.638926 Google Books author scrape
+INFO:__main__:2024-06-11 19:18:34.160735 Attempting to get author image
+ERROR:__main__:2024-06-11 19:18:34.160735 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:18:34.160735 Attempting to get author image
+ERROR:__main__:2024-06-11 19:18:34.160735 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:18:34.160735 list index out of range
+INFO:__main__:2024-06-11 19:18:36.181341 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 19:19:04.780107 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 19:20:10.938776 'NoneType' object has no attribute 'find'
+INFO:__main__:2024-06-11 19:20:16.356391 Getting cover image of book
+INFO:__main__:2024-06-11 19:20:17.462554 Getting number of pages of book
+WARNING:__main__:2024-06-11 19:20:17.464552 No number of pages found!
+ERROR:__main__:2024-06-11 19:20:18.161972 'categories'
+INFO:__main__:2024-06-11 19:20:18.161972 Google Books author scrape
+INFO:__main__:2024-06-11 19:20:23.042831 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:20:24.988242 Attempting to get author image
+ERROR:__main__:2024-06-11 19:20:24.988242 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:20:24.988242 list index out of range
+INFO:__main__:2024-06-11 19:20:27.036022 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:20:45.512270 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:20:50.728658 Getting cover image of book
+INFO:__main__:2024-06-11 19:20:52.172989 Getting number of pages of book
+INFO:__main__:2024-06-11 19:20:52.896727 Google Books author scrape
+INFO:__main__:2024-06-11 19:20:57.646645 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:20:59.523955 Attempting to get author image
+ERROR:__main__:2024-06-11 19:20:59.523955 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:20:59.523955 list index out of range
+INFO:__main__:2024-06-11 19:21:01.580113 Goodreads author scrape
+ERROR:__main__:
+INFO:__main__:2024-06-11 19:21:26.761079 Getting cover image of book
+INFO:__main__:2024-06-11 19:21:27.863373 Getting number of pages of book
+INFO:__main__:2024-06-11 19:21:28.542734 Google Books author scrape
+INFO:__main__:2024-06-11 19:21:32.107441 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:21:34.126711 Attempting to get author image
+ERROR:__main__:2024-06-11 19:21:34.126711 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:21:34.127714 list index out of range
+INFO:__main__:2024-06-11 19:21:36.165535 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:21:56.876035 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:22:01.822563 Getting cover image of book
+INFO:__main__:2024-06-11 19:22:03.209554 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:22:03.889283 'publisher'
+INFO:__main__:2024-06-11 19:22:03.889283 Google Books author scrape
+INFO:__main__:2024-06-11 19:22:07.279148 Attempting to get author image
+ERROR:__main__:2024-06-11 19:22:07.280149 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:22:07.280149 list index out of range
+INFO:__main__:2024-06-11 19:22:07.280149 Attempting to get author image
+ERROR:__main__:2024-06-11 19:22:07.280149 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:22:07.280149 list index out of range
+INFO:__main__:2024-06-11 19:22:09.313087 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:22:30.272230 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 19:22:35.747687 Getting cover image of book
+INFO:__main__:2024-06-11 19:22:36.873506 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:22:37.572293 'publisher'
+INFO:__main__:2024-06-11 19:22:37.572293 Google Books author scrape
+INFO:__main__:2024-06-11 19:22:41.049232 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:22:42.846947 Attempting to get author image
+ERROR:__main__:2024-06-11 19:22:42.846947 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:22:42.846947 list index out of range
+INFO:__main__:2024-06-11 19:22:44.891964 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:23:04.654816 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:23:09.889253 Getting cover image of book
+INFO:__main__:2024-06-11 19:23:11.008946 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:23:11.774555 'publisher'
+INFO:__main__:2024-06-11 19:23:11.774555 Google Books author scrape
+INFO:__main__:2024-06-11 19:23:14.749650 Attempting to get author image
+ERROR:__main__:2024-06-11 19:23:14.749650 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:23:14.749650 Attempting to get author image
+ERROR:__main__:2024-06-11 19:23:14.749650 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:23:14.749650 list index out of range
+INFO:__main__:2024-06-11 19:23:16.785968 Goodreads author scrape
+INFO:__main__:2024-06-11 19:23:40.969123 Getting cover image of book
+INFO:__main__:2024-06-11 19:23:42.063526 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:23:42.752162 'publisher'
+INFO:__main__:2024-06-11 19:23:42.752162 Google Books author scrape
+INFO:__main__:2024-06-11 19:23:48.590941 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:23:52.738907 Attempting to get author image
+ERROR:__main__:2024-06-11 19:23:52.738907 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:23:52.739908 list index out of range
+INFO:__main__:2024-06-11 19:23:54.771264 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:24:15.943436 'NoneType' object has no attribute 'find'
+INFO:__main__:2024-06-11 19:24:22.211693 Getting cover image of book
+INFO:__main__:2024-06-11 19:24:23.310761 Getting number of pages of book
+WARNING:__main__:2024-06-11 19:24:23.312758 No number of pages found!
+ERROR:__main__:2024-06-11 19:24:23.991351 'publisher'
+INFO:__main__:2024-06-11 19:24:23.991351 Google Books author scrape
+INFO:__main__:2024-06-11 19:24:27.366380 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:24:31.483373 Attempting to get author image
+ERROR:__main__:2024-06-11 19:24:31.483373 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:24:31.483373 list index out of range
+INFO:__main__:2024-06-11 19:24:33.502528 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:24:55.525572 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:25:01.743205 Getting cover image of book
+INFO:__main__:2024-06-11 19:25:02.838720 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:25:03.530667 'publisher'
+INFO:__main__:2024-06-11 19:25:03.531670 Google Books author scrape
+INFO:__main__:2024-06-11 19:25:06.529909 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:25:08.526462 Attempting to get author image
+ERROR:__main__:2024-06-11 19:25:08.526462 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:25:08.526462 list index out of range
+INFO:__main__:2024-06-11 19:25:10.554632 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:25:31.015051 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:25:36.224050 Getting cover image of book
+INFO:__main__:2024-06-11 19:25:37.577715 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:25:38.283679 'publisher'
+INFO:__main__:2024-06-11 19:25:38.283679 Google Books author scrape
+INFO:__main__:2024-06-11 19:25:41.906048 Attempting to get author image
+ERROR:__main__:2024-06-11 19:25:41.906048 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:25:41.906048 list index out of range
+INFO:__main__:2024-06-11 19:25:41.906048 Attempting to get author image
+ERROR:__main__:2024-06-11 19:25:41.906048 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:25:41.906048 list index out of range
+INFO:__main__:2024-06-11 19:25:43.926580 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:26:10.651464 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:26:16.874476 Getting cover image of book
+INFO:__main__:2024-06-11 19:26:17.995487 Getting number of pages of book
+INFO:__main__:2024-06-11 19:26:18.646389 Google Books author scrape
+INFO:__main__:2024-06-11 19:26:21.858055 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:26:25.906798 Attempting to get author image
+ERROR:__main__:2024-06-11 19:26:25.906798 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:26:25.906798 list index out of range
+INFO:__main__:2024-06-11 19:26:27.948703 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:26:49.718627 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:26:55.933451 Getting cover image of book
+INFO:__main__:2024-06-11 19:26:57.043170 Getting number of pages of book
+INFO:__main__:2024-06-11 19:26:57.735560 Google Books author scrape
+INFO:__main__:2024-06-11 19:27:01.670217 Attempting to get author image
+ERROR:__main__:2024-06-11 19:27:01.670217 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:27:01.670217 Attempting to get author image
+ERROR:__main__:2024-06-11 19:27:01.670217 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:27:01.670217 list index out of range
+INFO:__main__:2024-06-11 19:27:03.712819 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 19:27:25.641995 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 19:27:33.659967 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:27:38.859939 Getting cover image of book
+INFO:__main__:2024-06-11 19:27:40.220517 Getting number of pages of book
+INFO:__main__:2024-06-11 19:27:40.878926 Google Books author scrape
+INFO:__main__:2024-06-11 19:27:43.849696 Attempting to get author image
+ERROR:__main__:2024-06-11 19:27:43.850696 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:27:43.850696 Attempting to get author image
+ERROR:__main__:2024-06-11 19:27:43.850696 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:27:43.850696 list index out of range
+INFO:__main__:2024-06-11 19:27:45.889715 Goodreads author scrape
+INFO:__main__:New author bio added
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 19:32:21.505084 Getting cover image of book
+INFO:__main__:2024-06-11 19:32:22.861492 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:32:23.566749 'publisher'
+INFO:__main__:2024-06-11 19:32:23.566749 Google Books author scrape
+INFO:__main__:2024-06-11 19:32:26.870074 Attempting to get author image
+ERROR:__main__:2024-06-11 19:32:26.870074 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:32:26.870074 Attempting to get author image
+ERROR:__main__:2024-06-11 19:32:26.870074 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:32:26.870074 list index out of range
+INFO:__main__:2024-06-11 19:32:28.902526 Goodreads author scrape
+ERROR:__main__:
+ERROR:__main__:2024-06-11 19:32:53.551692 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:32:59.025092 Getting cover image of book
+INFO:__main__:2024-06-11 19:33:00.129377 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:33:00.981480 'publisher'
+INFO:__main__:2024-06-11 19:33:00.981480 Google Books author scrape
+INFO:__main__:2024-06-11 19:33:04.043696 Attempting to get author image
+ERROR:__main__:2024-06-11 19:33:04.043696 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:33:04.043696 list index out of range
+INFO:__main__:2024-06-11 19:33:04.043696 Attempting to get author image
+ERROR:__main__:2024-06-11 19:33:04.044696 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:33:04.044696 list index out of range
+INFO:__main__:2024-06-11 19:33:06.077793 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:33:19.908138 'NoneType' object has no attribute 'find_all'
+INFO:__main__:2024-06-11 19:33:23.090285 Getting cover image of book
+INFO:__main__:2024-06-11 19:33:24.201775 Getting number of pages of book
+INFO:__main__:2024-06-11 19:33:24.886018 Google Books author scrape
+INFO:__main__:2024-06-11 19:33:27.937891 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:33:31.550393 Attempting to get author image
+ERROR:__main__:2024-06-11 19:33:31.550393 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:33:31.550393 list index out of range
+INFO:__main__:2024-06-11 19:33:33.584139 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:38:01.963409 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:
+ERROR:__main__:2024-06-11 19:38:09.972438 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:38:15.149860 Getting cover image of book
+INFO:__main__:2024-06-11 19:38:16.264846 Getting number of pages of book
+INFO:__main__:2024-06-11 19:38:17.019327 Google Books author scrape
+INFO:__main__:2024-06-11 19:38:20.772766 Attempting to get author image
+ERROR:__main__:2024-06-11 19:38:20.772766 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:38:20.772766 list index out of range
+INFO:__main__:2024-06-11 19:38:20.772766 Attempting to get author image
+ERROR:__main__:2024-06-11 19:38:20.772766 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:38:20.772766 list index out of range
+INFO:__main__:2024-06-11 19:38:22.811439 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:38:41.326042 'NoneType' object has no attribute 'find'
+INFO:__main__:2024-06-11 19:38:47.575682 Getting cover image of book
+INFO:__main__:2024-06-11 19:38:48.757291 Getting number of pages of book
+INFO:__main__:2024-06-11 19:38:49.460178 Google Books author scrape
+INFO:__main__:2024-06-11 19:38:53.356688 Attempting to get author image
+ERROR:__main__:2024-06-11 19:38:53.356688 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:38:53.356688 Attempting to get author image
+ERROR:__main__:2024-06-11 19:38:53.356688 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:38:53.356688 list index out of range
+INFO:__main__:2024-06-11 19:38:55.375279 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:43:25.303660 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 19:43:30.629705 Getting cover image of book
+INFO:__main__:2024-06-11 19:43:31.986158 Getting number of pages of book
+INFO:__main__:2024-06-11 19:43:32.681924 Google Books author scrape
+INFO:__main__:2024-06-11 19:43:35.686815 Attempting to get author image
+ERROR:__main__:2024-06-11 19:43:35.686815 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:43:35.686815 Attempting to get author image
+ERROR:__main__:2024-06-11 19:43:35.686815 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:43:35.686815 list index out of range
+INFO:__main__:2024-06-11 19:43:37.716789 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:48:05.532572 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:48:11.735366 Getting cover image of book
+INFO:__main__:2024-06-11 19:48:12.853836 Getting number of pages of book
+INFO:__main__:2024-06-11 19:48:13.578271 Google Books author scrape
+INFO:__main__:2024-06-11 19:48:17.093203 Attempting to get author image
+ERROR:__main__:2024-06-11 19:48:17.093203 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:48:17.093203 list index out of range
+INFO:__main__:2024-06-11 19:48:17.093203 Attempting to get author image
+ERROR:__main__:2024-06-11 19:48:17.093203 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:48:17.093203 list index out of range
+INFO:__main__:2024-06-11 19:48:17.093203 Attempting to get author image
+ERROR:__main__:2024-06-11 19:48:17.093203 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:48:17.093203 list index out of range
+INFO:__main__:2024-06-11 19:48:19.114995 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:48:45.913032 'NoneType' object has no attribute 'get_text'
+ERROR:__main__:2024-06-11 19:48:53.207442 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:48:58.414319 Getting cover image of book
+INFO:__main__:2024-06-11 19:48:59.549930 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:49:00.249326 'categories'
+INFO:__main__:2024-06-11 19:49:00.249326 Google Books author scrape
+INFO:__main__:2024-06-11 19:49:03.471572 Attempting to get author image
+ERROR:__main__:2024-06-11 19:49:03.471572 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:49:03.471572 Attempting to get author image
+ERROR:__main__:2024-06-11 19:49:03.471572 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:49:03.471572 list index out of range
+INFO:__main__:2024-06-11 19:49:05.496437 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:49:24.693476 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:49:29.920925 Getting cover image of book
+INFO:__main__:2024-06-11 19:49:31.031296 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:49:31.700856 'categories'
+INFO:__main__:2024-06-11 19:49:31.700856 Google Books author scrape
+INFO:__main__:2024-06-11 19:49:34.894141 Attempting to get author image
+ERROR:__main__:2024-06-11 19:49:34.894141 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:49:34.894141 Attempting to get author image
+ERROR:__main__:2024-06-11 19:49:34.895141 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:49:34.895141 list index out of range
+INFO:__main__:2024-06-11 19:49:36.921295 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:49:57.710379 'NoneType' object has no attribute 'get_text'
+INFO:__main__:2024-06-11 19:50:03.010665 Getting cover image of book
+INFO:__main__:2024-06-11 19:50:04.104755 Getting number of pages of book
+WARNING:__main__:2024-06-11 19:50:04.106754 No number of pages found!
+ERROR:__main__:2024-06-11 19:50:04.802079 'publisher'
+INFO:__main__:2024-06-11 19:50:04.802079 Google Books author scrape
+INFO:__main__:2024-06-11 19:50:08.377860 Attempting to get author image
+ERROR:__main__:2024-06-11 19:50:08.377860 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:50:08.377860 Attempting to get author image
+ERROR:__main__:2024-06-11 19:50:08.377860 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:50:08.377860 list index out of range
+INFO:__main__:2024-06-11 19:50:10.405609 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:50:32.240727 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 19:50:37.628599 Getting cover image of book
+INFO:__main__:2024-06-11 19:50:39.035686 Getting number of pages of book
+INFO:__main__:2024-06-11 19:50:39.825228 Google Books author scrape
+INFO:__main__:2024-06-11 19:50:42.908165 Attempting to get author image
+ERROR:__main__:2024-06-11 19:50:42.908165 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:50:42.908165 Attempting to get author image
+ERROR:__main__:2024-06-11 19:50:42.908165 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:50:42.908165 list index out of range
+INFO:__main__:2024-06-11 19:50:44.934878 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:51:15.257628 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 19:51:20.736044 Getting cover image of book
+INFO:__main__:2024-06-11 19:51:23.135588 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:51:23.828603 'publisher'
+INFO:__main__:2024-06-11 19:51:23.829604 Google Books author scrape
+INFO:__main__:2024-06-11 19:51:27.233047 Attempting to get author image
+ERROR:__main__:2024-06-11 19:51:27.233047 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:51:27.233047 list index out of range
+INFO:__main__:2024-06-11 19:51:27.233047 Attempting to get author image
+ERROR:__main__:2024-06-11 19:51:27.233047 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:51:27.233047 list index out of range
+INFO:__main__:2024-06-11 19:51:29.264395 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:51:50.207885 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 19:51:55.713730 Getting cover image of book
+INFO:__main__:2024-06-11 19:51:57.119381 Getting number of pages of book
+WARNING:__main__:2024-06-11 19:51:57.122380 No number of pages found!
+INFO:__main__:2024-06-11 19:51:57.821084 Google Books author scrape
+INFO:__main__:2024-06-11 19:52:01.523102 Attempting to get author image
+ERROR:__main__:2024-06-11 19:52:01.523102 list index out of range
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:52:01.523102 Attempting to get author image
+ERROR:__main__:2024-06-11 19:52:01.523102 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:52:01.523102 list index out of range
+INFO:__main__:2024-06-11 19:52:03.559369 Goodreads author scrape
+ERROR:__main__:2024-06-11 19:52:22.371218 'NoneType' object has no attribute 'get_text'
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 19:52:28.795520 Getting cover image of book
+INFO:__main__:2024-06-11 19:52:30.910877 Getting number of pages of book
+ERROR:__main__:2024-06-11 19:52:31.535857 'items'
+ERROR:__main__:2024-06-11 19:52:31.535857 'items'
+INFO:__main__:2024-06-11 19:52:32.647374 Getting cover image of book
+INFO:__main__:2024-06-11 19:52:34.020627 Getting number of pages of book
+INFO:__main__:2024-06-11 19:52:35.259944 Google Books author scrape
+INFO:__main__:2024-06-11 19:52:39.597893 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:52:40.924692 Attempting to get author image
+ERROR:__main__:2024-06-11 19:52:40.924692 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:52:40.924692 list index out of range
+INFO:__main__:2024-06-11 19:52:42.969119 Goodreads author scrape
+INFO:__main__:New author bio added
+INFO:__main__:2024-06-11 19:57:21.018766 Getting cover image of book
+INFO:__main__:2024-06-11 19:57:22.243725 Getting number of pages of book
+WARNING:__main__:2024-06-11 19:57:22.246722 No number of pages found!
+ERROR:__main__:2024-06-11 19:57:22.995915 'items'
+ERROR:__main__:2024-06-11 19:57:22.995915 'items'
+INFO:__main__:2024-06-11 19:57:24.271137 Getting cover image of book
+INFO:__main__:2024-06-11 19:57:25.453044 Getting number of pages of book
+WARNING:__main__:2024-06-11 19:57:25.457060 No number of pages found!
+ERROR:__main__:2024-06-11 19:57:26.067824 'items'
+ERROR:__main__:2024-06-11 19:57:26.067824 'items'
+INFO:__main__:2024-06-11 19:57:27.301853 Getting cover image of book
+INFO:__main__:2024-06-11 19:57:28.575003 Getting number of pages of book
+WARNING:__main__:2024-06-11 19:57:28.577999 No number of pages found!
+ERROR:__main__:2024-06-11 19:57:29.345719 'items'
+ERROR:__main__:2024-06-11 19:57:29.345719 'items'
+INFO:__main__:2024-06-11 19:57:30.658741 Getting cover image of book
+INFO:__main__:2024-06-11 19:57:31.907686 Getting number of pages of book
+WARNING:__main__:2024-06-11 19:57:31.911671 No number of pages found!
+ERROR:__main__:2024-06-11 19:57:32.726456 'items'
+ERROR:__main__:2024-06-11 19:57:32.727451 'items'
+INFO:__main__:2024-06-11 19:57:33.951989 Getting cover image of book
+INFO:__main__:2024-06-11 19:57:35.489465 Getting number of pages of book
+WARNING:__main__:2024-06-11 19:57:35.493446 No number of pages found!
+ERROR:__main__:2024-06-11 19:57:36.242151 'publisher'
+INFO:__main__:2024-06-11 19:57:36.242151 Google Books author scrape
+INFO:__main__:2024-06-11 19:57:40.037209 Attempting to get author image
+ERROR:__main__:2024-06-11 19:57:40.038209 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:57:40.038209 list index out of range
+INFO:__main__:2024-06-11 19:57:40.038209 Attempting to get author image
+ERROR:__main__:2024-06-11 19:57:40.038209 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:57:40.038209 list index out of range
+INFO:__main__:2024-06-11 19:57:42.093668 Goodreads author scrape
+INFO:__main__:New author bio added
+INFO:__main__:New author photo added
+INFO:__main__:2024-06-11 19:58:10.248689 Getting cover image of book
+INFO:__main__:2024-06-11 19:58:11.434917 Getting number of pages of book
+INFO:__main__:2024-06-11 19:58:12.186030 Google Books author scrape
+INFO:__main__:2024-06-11 19:58:16.207871 Attempting to get author image
+INFO:__main__:Attempting to get author bio
+INFO:__main__:2024-06-11 19:58:19.630827 Attempting to get author image
+ERROR:__main__:2024-06-11 19:58:19.630827 list index out of range
+INFO:__main__:Attempting to get author bio
+ERROR:__main__:2024-06-11 19:58:19.630827 list index out of range
+INFO:__main__:2024-06-11 19:58:21.678572 Goodreads author scrape

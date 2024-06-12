@@ -1,27 +1,17 @@
 import base64
 import json
-import re
 
+from pymongo import MongoClient
 from selenium import webdriver
 
 import requests
 from bs4 import BeautifulSoup
 import datetime
 import logging
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
-today = datetime.date.today()
-
-year = today.year
-
-months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+import pymongo
+import traceback
 
 logger = logging.getLogger(__name__)
-
-newReleases = []
-
 
 class Book:
     author = []
@@ -46,7 +36,6 @@ class Book:
         self.cover = c
         self.tags = ts
         self.pages = p
-
 class Author:
     photo = ""
     bio = ""
@@ -54,7 +43,7 @@ class Author:
     personal_website = ""
     goodreads_link = ""
 
-    def __init__(self,p,b,n):
+    def __init__(self, p,b,n):
         self.photo = p
         self.bio = b
         self.name = n
@@ -83,7 +72,7 @@ def author_goodreads_scrape(book):
             try:
                 author = next(author for author in book.author if author.name == author_name)
             except Exception as e:
-                logger.error(e)
+                logger.error(datetime.datetime.now()+" "+str(e)+"\n"+traceback.format_exc())
             if author!= None:
                 int = book.author.index(author)
                 bio = ""
@@ -91,24 +80,24 @@ def author_goodreads_scrape(book):
                 try:
                     bio = author_soup.find("div", {"class": "aboutAuthorInfo"}).find("span",{"style": "display:none"}).get_text()
                 except Exception as e:
-                    logger.error(str(datetime.datetime.now())+" "+str(e))
+                    logger.error(str(datetime.datetime.now())+" "+str(e)+"\n"+traceback.format_exc())
                 try:
                     photo = author_soup.find("img", {"alt": author_name})["src"]
                 except Exception as e:
-                    logger.error(str(datetime.datetime.now())+" "+str(e))
+                    logger.error(str(datetime.datetime.now())+" "+str(e)+"\n"+traceback.format_exc())
                 if len(author.bio)<len(bio):
                     logger.info("New author bio added")
                     author.bio = bio
-                if len(author.photo)<len(photo) and "https://s.gr-assets.com/assets/nophoto/" not in photo:
+                if len(author.photo)<len(photo) and "nophoto" not in photo:
                     logger.info("New author photo added")
-                    author.photo = photo
+                    author.photo = base64.b64encode(requests.get(photo).content).decode("utf-8")
                 try:
                     websites = author_soup.find_all("a", {"itemprop": "url"})
                     for j in range(0, len(websites)):
-                        if "twitter" or "instagram" or "goodreads" or "/book/show" not in websites[j]["href"]:
+                        if "twitter" and "instagram" and "goodreads" not in websites[j]["href"] and "http" in websites[j]["href"]:
                             author.personal_website = websites[j]["href"]
                 except Exception as e:
-                    logger.error(str(datetime.datetime.now())+" "+str(e))
+                    logger.error(str(datetime.datetime.now())+" "+str(e)+"\n"+traceback.format_exc())
                 author.goodreads_link = authors_links[i]["href"]
                 book.author[int] = author
             else:
@@ -117,19 +106,20 @@ def author_goodreads_scrape(book):
                 try:
                     bio = author_soup.find("div", {"class": "aboutAuthorInfo"}).find("span",{"style": "display:none"}).get_text()
                 except Exception as e:
-                    logger.error(str(datetime.datetime.now())+" "+str(e))
+                    logger.error(str(datetime.datetime.now())+" "+str(e)+"\n"+traceback.format_exc())
                 try:
-                    photo = author_soup.find("img", {"alt": author_name})["src"]
+                    if "nophoto" not in author_soup.find("img", {"alt": author_name})["src"]:
+                        photo = base64.b64encode(requests.get(author_soup.find("img", {"alt": author_name})["src"]).content).decode("utf-8")
                 except Exception as e:
-                    logger.error(str(datetime.datetime.now())+" "+str(e))
+                    logger.error(str(datetime.datetime.now())+" "+str(e)+"\n"+traceback.format_exc())
                 a = Author(photo,bio,author_name)
                 try:
                     websites = author_soup.find_all("a", {"itemprop": "url"})
                     for j in range(0, len(websites)):
-                        if "twitter" or "instagram" or "goodreads" or "/book/show" not in websites[j]["href"]:
+                        if "twitter" and "instagram" and "goodreads" not in websites[j]["href"] and "http" in websites[j]["href"]:
                             a.personal_website = websites[j]["href"]
                 except Exception as e:
-                    logger.error(str(datetime.datetime.now())+" "+str(e))
+                    logger.error(str(datetime.datetime.now())+" "+str(e)+"\n"+traceback.format_exc())
                 a.goodreads_link = authors_links[i]["href"]
                 book.author.append(a)
     print(book.__dict__)
@@ -159,12 +149,12 @@ def author_google_books_scrape(book, id):
                 logger.info(str(datetime.datetime.now())+" "+"Attempting to get author image")
                 image = base64.b64encode(requests.get("https://www.google.co.za"+author_photos[i].find("a")["href"]).content).decode("utf-8")
             except Exception as e:
-                logger.error(str(datetime.datetime.now())+" "+str(e))
+                logger.error(str(datetime.datetime.now())+" "+str(e)+"\n"+traceback.format_exc())
             try:
                 logger.info("Attempting to get author bio")
                 author_bio = author_bios[i].get_text()
             except Exception as e:
-                logger.error(str(datetime.datetime.now())+" "+str(e))
+                logger.error(str(datetime.datetime.now())+" "+str(e)+"\n"+traceback.format_exc())
             authors.append(Author(image,author_bio,author_names[i].get_text()))
 
     book.author = authors
@@ -178,12 +168,13 @@ def google_books_api(book):
         for i in list(book_details["items"][0]["volumeInfo"]["categories"]):
             book.tags.append(i)
     except Exception as e:
-        logger.error(str(datetime.datetime.now())+" "+str(e))
+        logger.error(str(datetime.datetime.now())+" "+str(e)+"\n"+traceback.format_exc())
     book = author_google_books_scrape(book,book_details["items"][0]["id"])
     book = author_goodreads_scrape(book)
     return book
 
-def get_books_for_the_month(month):
+def get_books_for_the_month(month, year):
+    newReleasesForMonth = []
     pageNumber = 1
     html = requests.get("https://www.fictiondb.com/newreleases/new-books-by-month.php?date=" + month + "-" + str(
         year) + "&ltyp=3&genre=Genre&binding=a&otherfilters=n&submitted=TRUE&s=" + str(pageNumber) + "&sort=x")
@@ -217,12 +208,12 @@ def get_books_for_the_month(month):
                 logger.info(str(datetime.datetime.now())+" "+"Getting cover image of book")
                 try:
                     if "NoCover" in image_url:
-                        logger.warning(str(datetime.datetime.now())+" "+"No cover found!")
+                        logger.warning(str(datetime.datetime.now())+" "+"No cover found!"+"\n"+traceback.format_exc())
                         cover_image = ""
                     else:
                         cover_image = base64.b64encode(requests.get(image_url).content).decode("utf-8")
                 except:
-                    logger.error(str(datetime.datetime.now())+" "+"Something went wrong with the book cover!")
+                    logger.error(str(datetime.datetime.now())+" "+"Something went wrong with the book cover!"+"\n"+traceback.format_exc())
                     cover_image = ""
 
 
@@ -230,7 +221,7 @@ def get_books_for_the_month(month):
                     logger.info(str(datetime.datetime.now())+" "+"Getting number of pages of book")
                     pages = book_soup.find(string="Pages:").findParent("li").find("div").get_text().strip()
                 except:
-                    logger.warning(str(datetime.datetime.now())+" "+"No number of pages found!")
+                    logger.warning(str(datetime.datetime.now())+" "+"No number of pages found!"+"\n"+traceback.format_exc())
                     pages = ""
 
 
@@ -248,18 +239,37 @@ def get_books_for_the_month(month):
 
                 book = google_books_api(book)
 
-                newReleases.append(book)
+                newReleasesForMonth.append(book)
 
             except Exception as e:
-                logger.error(str(datetime.datetime.now())+" "+str(e))
+                logger.error(str(datetime.datetime.now())+" "+str(e)+"\n"+traceback.format_exc())
+
+    return newReleasesForMonth
 
 
 
 logging.basicConfig(filename='webscraper.log', level=logging.INFO)
 
+today = datetime.date.today()
 
-for m in months:
-    get_books_for_the_month(m)
+year = today.year
 
-# x = requests.get("https://www.googleapis.com/books/v1/volumes?q=isbn:9798891321045")
-# print(x.text)
+months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+uri = "mongodb+srv://Novel2:p6TWcjjuSwxtkVz4@novel2.8fpednf.mongodb.net/?retryWrites=true&w=majority&appName=Novel2"
+
+client = MongoClient(uri)
+
+for y in range(0, 3):
+    for m in months:
+        booksForMonth = get_books_for_the_month(m, year+y)
+        bookCollection = client.get_database("Novel2").get_collection("book")
+        authorCollection = client.get_database("Novel2").get_collection("author")
+        try:
+            bookCollection.insert_many(booksForMonth)
+            for b in booksForMonth:
+                authorCollection.insert_many(b.author)
+        except Exception as e:
+            logger.error(str(datetime.datetime.now())+" "+str(e)+"\n"+traceback.format_exc())
+
