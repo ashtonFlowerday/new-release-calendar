@@ -17,6 +17,9 @@ uri = "mongodb+srv://Novel2:p6TWcjjuSwxtkVz4@novel2.8fpednf.mongodb.net/?retryWr
 
 client = MongoClient(uri)
 
+author_list = []
+book_list = []
+
 bookCollection = client.get_database("Novel2").get_collection("book")
 authorCollection = client.get_database("Novel2").get_collection("author")
 
@@ -42,6 +45,8 @@ class Author:
     bio = ""
     name = ""
     personal_website = ""
+    twitter = ""
+    instagram = ""
     goodreads_link = ""
 
     def __init__(self, p, b, n):
@@ -130,6 +135,12 @@ def author_goodreads_scrape(book):
                     if "twitter" and "instagram" and "goodreads" not in websites[j]["href"] and "http" in websites[j][
                         "href"]:
                         a.personal_website = websites[j]["href"]
+                    if "twitter" in websites[j]["href"] and "http" in websites[j][
+                        "href"]:
+                        a.twitter = websites[j]["href"]
+                    if "instagram" in websites[j]["href"] and "http" in websites[j][
+                        "href"]:
+                        a.instagram = websites[j]["href"]
             except Exception as e:
                 print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
                 logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
@@ -178,7 +189,6 @@ def author_google_books_scrape(book, id):
 def google_books_api(book):
     try:
         book_details = json.loads(requests.get("https://www.googleapis.com/books/v1/volumes?q=isbn:" + book.isbn).text)
-        book.date = book_details["items"][0]["volumeInfo"]["publishedDate"]
         book.publisher = book_details["items"][0]["volumeInfo"]["publisher"]
         for i in book_details["items"][0]["volumeInfo"]["categories"]:
             book.tags.append(i)
@@ -198,9 +208,6 @@ def google_books_api(book):
 
 def get_books_for_the_month(month, year):
     pageNumber = 1
-    logger.info(str(datetime.datetime.now()) + " Loggin in and getting necessary cookies")
-    data = {"username": "thevhssideshow", "pass": "thevhssideshow", "remember": "on", "submitted": "TRUE",
-            "lrtype": "l"}
     html = requests.get("https://www.fictiondb.com/newreleases/new-books-by-month.php?date=" + month + "-" + str(
         year) + "&ltyp=3&genre=Genre&binding=a&otherfilters=n&submitted=TRUE&s=" + str(pageNumber) + "&sort=x")
     soup = BeautifulSoup(html.content, 'html.parser')
@@ -218,13 +225,17 @@ def get_books_for_the_month(month, year):
             year) + "&ltyp=3&genre=Genre&binding=a&otherfilters=n&submitted=TRUE&s=" + str(i) + "&sort=x")
         soup = BeautifulSoup(html.content, 'html.parser')
         hrefs = soup.find_all("a",class_="nowrap d-print-none")
+        dates = soup.find_all("span",itemprop="datePublished")
+        print(dates)
 
         logger.info(str(datetime.datetime.now()) + " " + "Scraping of book table complete!")
 
-        for h in hrefs:
+        for i in range(0,len(hrefs)):
                 book = Book()
-                isbn = h["href"].split("&")[1].replace("isbn=","")
+                isbn = hrefs[i]["href"].split("&")[1].replace("isbn=","")
                 book.isbn = isbn
+                book.date = dates[i].get_text()
+                print(book.__dict__)
                 book.goodreads_link = "https://www.goodreads.com/search?utf8=%E2%9C%93&query=" + book.isbn
                 book.amazon_link = "https://www.amazon.com/s?k=" + book.isbn
                 try:
@@ -232,20 +243,21 @@ def get_books_for_the_month(month, year):
                 except Exception as e:
                     print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
                     logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-                insert_book_into_database(book)
+                book_list.append(book.__dict__)
 
 
-def insert_book_into_database(book):
+def insert_books_into_database():
     logger.info(str(datetime.datetime.now()) + " " + "Posting to database")
-    book._id = (book.isbn + book.title + book.date).replace(" ", "")
-    authors = []
-    for i in range(0, len(book.author)):
-        authors.append(book.author[i].__dict__)
-    book.author = authors
-    bookCollection.insert_one(book.__dict__)
-    for i in range(0, len(book.author)):
-        book.author[i]["_id"] = book.author[i]["name"]
-        authorCollection.insert_one(book.author[i])
+    for b in book_list:
+        b["_id"] = (b["isbn"] + b["title"] + b["date"]).replace(" ", "")
+        authors = []
+        for i in range(0, len(b.author)):
+            b["author"][i]["_id"] = b["author"][i]["name"]
+            authors.append(b["author"][i].__dict__)
+            author_list.append(b["author"][i].__dict__)
+        b["author"] = authors
+    bookCollection.insert_many(book_list)
+    authorCollection.insert_many(author_list)
 
 
 logging.basicConfig(filename='webscraper.log', level=logging.INFO)
@@ -260,6 +272,7 @@ for y in range(year - 10, year + 2):
     for m in months:
         try:
             get_books_for_the_month(m, y)
+            insert_books_into_database()
         except Exception as e:
             print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
             logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
