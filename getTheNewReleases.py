@@ -116,8 +116,7 @@ def author_goodreads_scrape(book):
             bio = ""
             photo = ""
             try:
-                bio = author_soup.find("div", {"class": "aboutAuthorInfo"}).find("span",
-                                                                                 {"style": "display:none"}).get_text()
+                bio = author_soup.find("div", {"class": "aboutAuthorInfo"}).find("span",{"style": "display:none"}).get_text()
             except Exception as e:
                 print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
                 logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
@@ -158,10 +157,8 @@ def author_google_books_scrape(book, id):
     browser = webdriver.Chrome(options=option)
     browser.get("https://www.google.co.za/books/edition/_/" + id + "?hl=en&gbpv=0")
     soup = BeautifulSoup(browser.page_source, 'html.parser')
-
     author_names = soup.find_all(class_="U7rXJc")
     author_bios = soup.find_all(class_="qO5zb")
-    author_photos = soup.find_all(class_="IXgIFd")
     authors = []
 
     for i in range(0, len(author_names)):
@@ -169,8 +166,6 @@ def author_google_books_scrape(book, id):
         author_bio = ""
         try:
             logger.info(str(datetime.datetime.now()) + " " + "Attempting to get author image")
-            image = base64.b64encode(
-                requests.get("https://www.google.co.za" + author_photos[i].find("a")["href"]).content).decode("utf-8")
         except Exception as e:
             print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
             logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
@@ -189,9 +184,27 @@ def author_google_books_scrape(book, id):
 def google_books_api(book):
     try:
         book_details = json.loads(requests.get("https://www.googleapis.com/books/v1/volumes?q=isbn:" + book.isbn).text)
-        book.publisher = book_details["items"][0]["volumeInfo"]["publisher"]
-        for i in book_details["items"][0]["volumeInfo"]["categories"]:
-            book.tags.append(i)
+        try:
+            book.title = book_details["items"][0]["volumeInfo"]["title"]
+        except:
+            pass
+        try:
+            book.synopsis = book_details["items"][0]["volumeInfo"]["description"]
+        except:
+            pass
+        try:
+            book.isbn = next((x["identifier"] for x in book_details["items"][0]["industryIdentifiers"] if x.type == 'ISBN_13'), book.isbn)
+        except:
+            pass
+        try:
+            book.publisher = book_details["items"][0]["volumeInfo"]["publisher"]
+        except:
+            pass
+        try:
+            for i in book_details["items"][0]["volumeInfo"]["categories"]:
+                book.tags.append(i)
+        except:
+            pass
     except Exception as e:
         print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
         logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
@@ -200,9 +213,18 @@ def google_books_api(book):
     except:
         try:
             book = author_goodreads_scrape(book)
+            if (len(book.author)==0):
+                for a in book_details["items"][0]["volumeInfo"]["author"]:
+                    book.author.append(Author("","",a))
         except Exception as e:
             print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
             logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
+            try:
+                if (len(book.author)==0):
+                    for a in book_details["items"][0]["volumeInfo"]["author"]:
+                        book.author.append(Author("","",a))
+            except:
+                pass
     return book
 
 
@@ -226,7 +248,6 @@ def get_books_for_the_month(month, year):
         soup = BeautifulSoup(html.content, 'html.parser')
         hrefs = soup.find_all("a",class_="nowrap d-print-none")
         dates = soup.find_all("span",itemprop="datePublished")
-        print(dates)
 
         logger.info(str(datetime.datetime.now()) + " " + "Scraping of book table complete!")
 
@@ -235,7 +256,6 @@ def get_books_for_the_month(month, year):
                 isbn = hrefs[i]["href"].split("&")[1].replace("isbn=","")
                 book.isbn = isbn
                 book.date = dates[i].get_text()
-                print(book.__dict__)
                 book.goodreads_link = "https://www.goodreads.com/search?utf8=%E2%9C%93&query=" + book.isbn
                 book.amazon_link = "https://www.amazon.com/s?k=" + book.isbn
                 try:
@@ -273,6 +293,8 @@ for y in range(year - 10, year + 2):
         try:
             get_books_for_the_month(m, y)
             insert_books_into_database()
+            author_list.clear()
+            book_list.clear()
         except Exception as e:
             print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
             logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
