@@ -189,6 +189,31 @@ def google_books_api(book):
         except:
             pass
         try:
+            book.pages = book_details["items"][0]["volumeInfo"]["pageCount"]
+        except:
+            pass
+        try:
+            cover = ""
+            cover = book_details["items"][0]["volumeInfo"]["imageLinks"]["extraLarge"]
+        except:
+            try:
+                cover = book_details["items"][0]["volumeInfo"]["imageLinks"]["large"]
+            except:
+                try:
+                    cover = book_details["items"][0]["volumeInfo"]["imageLinks"]["medium"]
+                except:
+                    try:
+                        cover = book_details["items"][0]["volumeInfo"]["imageLinks"]["small"]
+                    except:
+                        try:
+                            cover = book_details["items"][0]["volumeInfo"]["imageLinks"]["thumbnail"]
+                        except:
+                            pass
+        if cover != "":
+            book.cover=base64.b64encode(requests.get(cover).content).decode("utf-8")
+        else:
+            book.cover = cover
+        try:
             book.synopsis = book_details["items"][0]["volumeInfo"]["description"]
         except:
             pass
@@ -201,8 +226,17 @@ def google_books_api(book):
         except:
             pass
         try:
-            for i in book_details["items"][0]["volumeInfo"]["categories"]:
-                book.tags.append(i)
+            tag_html = requests.get(book_details["items"][0]["volumeInfo"]["infoLink"])
+            tag_soup = BeautifulSoup(tag_html.content, 'html.parser')
+            tags_hrefs = tag_soup.find_all("a", href=lambda href: href and "q=subject" in href)
+            tags = []
+            for th in tags_hrefs:
+                t = th.get_text().split("/")
+                for tag in t:
+                    ts = tag.strip()
+                    if ts not in tags:
+                        tags.append(ts)
+            book.tags = tags
         except:
             pass
     except Exception as e:
@@ -267,6 +301,7 @@ def get_books_for_the_month(month, year):
 
 
 def insert_books_into_database():
+    print("****************************************************Posting to database****************************************************")
     logger.info(str(datetime.datetime.now()) + " " + "Posting to database")
     for b in book_list:
         b["_id"] = (b["isbn"] + b["title"] + b["date"]).replace(" ", "")
@@ -288,7 +323,7 @@ year = today.year
 
 months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-for y in range(year - 10, year + 2):
+for y in range(year - 2, year + 2):
     for m in months:
         try:
             get_books_for_the_month(m, y)
