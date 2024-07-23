@@ -17,7 +17,6 @@ uri = "mongodb+srv://Novel2:p6TWcjjuSwxtkVz4@novel2.8fpednf.mongodb.net/?retryWr
 
 client = MongoClient(uri)
 
-author_list = []
 book_list = []
 
 bookCollection = client.get_database("Novel2").get_collection("book")
@@ -39,6 +38,9 @@ class Book:
     goodreads_link = ""
     amazon_link = ""
 
+    def __getattr__(self, name):
+        return self.__getitem__(name)
+
 class Author:
     _id = ""
     photo = ""
@@ -53,6 +55,9 @@ class Author:
         self.photo = p
         self.bio = b
         self.name = n
+
+    def __getattr__(self, name):
+        return self.__getitem__(name)
 
 
 def compare_authors(book):
@@ -296,29 +301,37 @@ def get_books_for_the_month(month, year):
                 except Exception as e:
                     print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
                     logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-                book_list.append(book.__dict__)
-        insert_books_into_database()
+                book_list.append(book)
+        try:
+            insert_books_into_database()
+        except Exception as e:
+            print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
+            logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
 
 
 
 def insert_books_into_database():
     print("****************************************************Posting to database****************************************************")
     logger.info(str(datetime.datetime.now()) + " " + "Posting to database")
+    book_final_list = []
+    author_final_list = []
     for b in book_list:
         try:
-            b["_id"] = (b["isbn"] + b["title"] + b["date"]).replace(" ", "")
+            b._id = (str(b.isbn) + str(b.title) + str(b.date)).replace(" ", "")
             authors = []
-            for i in range(0, len(b["author"])):
-                b["author"][i]["_id"] = b["author"][i]["name"]
-                authors.append(b["author"][i].__dict__)
-                author_list.append(b["author"][i].__dict__)
-            b["author"] = authors
+            for i in range(0, len(b.author)):
+                print(b.author[i])
+                b.author[i]._id = b.author[i].name
+                authors.append(b.author[i].__dict__)
+                author_final_list.append(b.author[i].__dict__)
+            b.author = authors
+            if(b.title != ""):
+                book_final_list.append(b.__dict__)
         except Exception as e:
             print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
             logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-    bookCollection.insert_many(book_list)
-    authorCollection.insert_many(author_list)
-    author_list.clear()
+    bookCollection.insert_many(book_final_list)
+    authorCollection.insert_many(author_final_list)
     book_list.clear()
 
 
