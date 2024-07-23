@@ -55,64 +55,63 @@ class Author:
         self.name = n
 
 
+def compare_authors(book):
+    logger.info(str(datetime.datetime.now()) + " Comparing authors")
+    authors = []
+    for i in range(0,len(book.author)):
+        for j in range(0,len(book.author)):
+            if j!=i and book.author[i].name == book.author[j].name:
+                if len(book.author[i].bio)>=len(book.author[j].bio):
+                    author_bio = book.author[i].bio
+                else:
+                    author_bio = book.author[j].bio
+                if len(book.author[i].photo)>=len(book.author[j].photo):
+                    author_image = book.author[i].photo
+                else:
+                    author_image = book.author[j].photo
+                a = Author(author_image,author_bio,book.author[i].name)
+                if len(book.author[i].personal_website)>=len(book.author[j].personal_website):
+                    a.personal_website = book.author[i].personal_website
+                else:
+                    a.personal_website = book.author[j].personal_website
+                if len(book.author[i].twitter)>=len(book.author[j].twitter):
+                    a.twitter = book.author[i].twitter
+                else:
+                    a.twitter = book.author[j].twitter
+                if len(book.author[i].instagram)>=len(book.author[j].instagram):
+                    a.instagram = book.author[i].instagram
+                else:
+                    a.instagram = book.author[j].instagram
+                if len(book.author[i].goodreads_link)>=len(book.author[j].goodreads_link):
+                    a.goodreads_link = book.author[i].goodreads_link
+                else:
+                    a.goodreads_link = book.author[j].goodreads_link
+                authors.append(a)
+    book.author = authors
+    print("000000000000000000000000000000"+str(book.__dict__)+"000000000000000000000000000000")
+    return book
+
+
 def author_goodreads_scrape(book):
     logger.info(str(datetime.datetime.now()) + " " + "Goodreads author scrape")
-    brave_path = "C:\\Program Files\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
-    option = webdriver.ChromeOptions()
-    option.binary_location = brave_path
-    option.add_argument("--window-size=1920,1080")
-    option.add_argument("--headless")
-    option.add_argument("--disable-gpu")
-    option.add_argument(
+    try:
+        brave_path = "C:\\Program Files\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+        option = webdriver.ChromeOptions()
+        option.binary_location = brave_path
+        option.add_argument("--window-size=1920,1080")
+        option.add_argument("--headless")
+        option.add_argument("--disable-gpu")
+        option.add_argument(
         "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36")
-    browser = webdriver.Chrome(options=option)
-    browser.get("https://www.goodreads.com/search?utf8=%E2%9C%93&query=" + book.isbn)
-    soup = BeautifulSoup(browser.page_source, 'html.parser')
-    authors_links = soup.find(class_="ContributorLinksList").find_all("a")
-    for i in range(0, len(authors_links)):
-        author_browser = webdriver.Chrome(options=option)
-        author_browser.get(authors_links[i]["href"])
-        author_soup = BeautifulSoup(author_browser.page_source, 'html.parser')
-        author_name = author_soup.find("h1", {"class": "authorName"}).find("span").get_text()
-        author = None
-        try:
-            author = next(author for author in book.author if author.name == author_name)
-        except Exception as e:
-            print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-            logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-        if author != None:
-            int = book.author.index(author)
-            bio = ""
-            photo = ""
-            try:
-                bio = author_soup.find("div", {"class": "aboutAuthorInfo"}).find("span",
-                                                                                 {"style": "display:none"}).get_text()
-            except Exception as e:
-                print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-                logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-            try:
-                photo = author_soup.find("img", {"alt": author_name})["src"]
-            except Exception as e:
-                print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-                logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-            if len(author.bio) < len(bio):
-                logger.info("New author bio added")
-                author.bio = bio
-            if len(author.photo) < len(photo) and "nophoto" not in photo:
-                logger.info("New author photo added")
-                author.photo = base64.b64encode(requests.get(photo).content).decode("utf-8")
-            try:
-                websites = author_soup.find_all("a", {"itemprop": "url"})
-                for j in range(0, len(websites)):
-                    if "twitter" and "instagram" and "goodreads" not in websites[j]["href"] and "http" in websites[j][
-                        "href"]:
-                        author.personal_website = websites[j]["href"]
-            except Exception as e:
-                print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-                logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-            author.goodreads_link = authors_links[i]["href"]
-            book.author[int] = author
-        else:
+        browser = webdriver.Chrome(options=option)
+        browser.get("https://www.goodreads.com/search?utf8=%E2%9C%93&query=" + book.isbn)
+        soup = BeautifulSoup(browser.page_source, 'html.parser')
+        authors_links = soup.find(class_="ContributorLinksList").find_all("a")
+        for i in range(0, len(authors_links)):
+            author_browser = webdriver.Chrome(options=option)
+            author_browser.get(authors_links[i]["href"])
+            author_soup = BeautifulSoup(author_browser.page_source, 'html.parser')
+            author_name = author_soup.find("h1", {"class": "authorName"}).find("span").get_text()
             bio = ""
             photo = ""
             try:
@@ -145,6 +144,9 @@ def author_goodreads_scrape(book):
                 logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
             a.goodreads_link = authors_links[i]["href"]
             book.author.append(a)
+    except Exception as e:
+        print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
+        logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
     return book
 
 
@@ -157,26 +159,31 @@ def author_google_books_scrape(book, id):
     browser = webdriver.Chrome(options=option)
     browser.get("https://www.google.co.za/books/edition/_/" + id + "?hl=en&gbpv=0")
     soup = BeautifulSoup(browser.page_source, 'html.parser')
-    author_names = soup.find_all(class_="U7rXJc")
-    author_bios = soup.find_all(class_="qO5zb")
+    authors_soup = soup.find_all(class_="FGWtsd")
     authors = []
 
-    for i in range(0, len(author_names)):
-        image = ""
+    for i in range(0, len(authors_soup)):
+        author_image = ""
         author_bio = ""
+        author_name = ""
         try:
-            logger.info(str(datetime.datetime.now()) + " " + "Attempting to get author image")
+            try:
+                author_bio = authors_soup[i].find(class_="qO5zb").get_text().replace("\xa0Wikipedia","")
+            except:
+                pass
+            try:
+                author_name = authors_soup[i].find(class_="U7rXJc").get_text()
+            except:
+                pass
+            try:
+                logger.info(str(datetime.datetime.now()) + " " + "Attempting to get author image")
+                author_image = authors_soup[i].find(class_="AAq3vb").find("img")["src"].split(",")[1]
+            except:
+                pass
         except Exception as e:
             print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
             logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-        try:
-            logger.info("Attempting to get author bio")
-            author_bio = author_bios[i].get_text()
-        except Exception as e:
-            print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-            logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-        authors.append(Author(image, author_bio, author_names[i].get_text()))
-
+        authors.append(Author(author_image, author_bio, author_name))
     book.author = authors
     return book
 
@@ -244,21 +251,12 @@ def google_books_api(book):
         logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
     try:
         book = author_google_books_scrape(book, book_details["items"][0]["id"])
+        book = author_goodreads_scrape(book)
     except:
-        try:
-            book = author_goodreads_scrape(book)
-            if (len(book.author)==0):
-                for a in book_details["items"][0]["volumeInfo"]["author"]:
+        if (len(book.author)==0):
+            for a in book_details["items"][0]["volumeInfo"]["author"]:
                     book.author.append(Author("","",a))
-        except Exception as e:
-            print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-            logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-            try:
-                if (len(book.author)==0):
-                    for a in book_details["items"][0]["volumeInfo"]["author"]:
-                        book.author.append(Author("","",a))
-            except:
-                pass
+    book = compare_authors(book)
     return book
 
 
@@ -284,8 +282,9 @@ def get_books_for_the_month(month, year):
         dates = soup.find_all("span",itemprop="datePublished")
 
         logger.info(str(datetime.datetime.now()) + " " + "Scraping of book table complete!")
-
+        print("//////////////////////////////////////////"+str(len(hrefs))+"//////////////////////////////////////////")
         for i in range(0,len(hrefs)):
+                print("//////////////////////////////////////////"+str(i)+"//////////////////////////////////////////")
                 book = Book()
                 isbn = hrefs[i]["href"].split("&")[1].replace("isbn=","")
                 book.isbn = isbn
@@ -298,21 +297,29 @@ def get_books_for_the_month(month, year):
                     print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
                     logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
                 book_list.append(book.__dict__)
+        insert_books_into_database()
+
 
 
 def insert_books_into_database():
     print("****************************************************Posting to database****************************************************")
     logger.info(str(datetime.datetime.now()) + " " + "Posting to database")
     for b in book_list:
-        b["_id"] = (b["isbn"] + b["title"] + b["date"]).replace(" ", "")
-        authors = []
-        for i in range(0, len(b.author)):
-            b["author"][i]["_id"] = b["author"][i]["name"]
-            authors.append(b["author"][i].__dict__)
-            author_list.append(b["author"][i].__dict__)
-        b["author"] = authors
+        try:
+            b["_id"] = (b["isbn"] + b["title"] + b["date"]).replace(" ", "")
+            authors = []
+            for i in range(0, len(b["author"])):
+                b["author"][i]["_id"] = b["author"][i]["name"]
+                authors.append(b["author"][i].__dict__)
+                author_list.append(b["author"][i].__dict__)
+            b["author"] = authors
+        except Exception as e:
+            print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
+            logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
     bookCollection.insert_many(book_list)
     authorCollection.insert_many(author_list)
+    author_list.clear()
+    book_list.clear()
 
 
 logging.basicConfig(filename='webscraper.log', level=logging.INFO)
@@ -327,9 +334,6 @@ for y in range(year - 2, year + 2):
     for m in months:
         try:
             get_books_for_the_month(m, y)
-            insert_books_into_database()
-            author_list.clear()
-            book_list.clear()
         except Exception as e:
             print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
             logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
