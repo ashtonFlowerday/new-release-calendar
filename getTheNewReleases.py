@@ -62,38 +62,40 @@ class Author:
 
 def compare_authors(book):
     logger.info(str(datetime.datetime.now()) + " Comparing authors")
-    authors = []
-    for i in range(0,len(book.author)):
-        for j in range(0,len(book.author)):
-            if j!=i and book.author[i].name == book.author[j].name:
-                if len(book.author[i].bio)>=len(book.author[j].bio):
-                    author_bio = book.author[i].bio
-                else:
-                    author_bio = book.author[j].bio
-                if len(book.author[i].photo)>=len(book.author[j].photo):
-                    author_image = book.author[i].photo
-                else:
-                    author_image = book.author[j].photo
-                a = Author(author_image,author_bio,book.author[i].name)
-                if len(book.author[i].personal_website)>=len(book.author[j].personal_website):
-                    a.personal_website = book.author[i].personal_website
-                else:
-                    a.personal_website = book.author[j].personal_website
-                if len(book.author[i].twitter)>=len(book.author[j].twitter):
-                    a.twitter = book.author[i].twitter
-                else:
-                    a.twitter = book.author[j].twitter
-                if len(book.author[i].instagram)>=len(book.author[j].instagram):
-                    a.instagram = book.author[i].instagram
-                else:
-                    a.instagram = book.author[j].instagram
-                if len(book.author[i].goodreads_link)>=len(book.author[j].goodreads_link):
-                    a.goodreads_link = book.author[i].goodreads_link
-                else:
-                    a.goodreads_link = book.author[j].goodreads_link
-                authors.append(a)
-    book.author = authors
-    print("000000000000000000000000000000"+str(book.__dict__)+"000000000000000000000000000000")
+    book.author = list(filter(lambda x: book.publisher not in x.name, book.author))
+    if len(book.author)>1:
+        authors = book.author
+        for i in range(0,len(book.author)):
+            for j in range(0,len(book.author)):
+                if j!=i and book.author[i].name == book.author[j].name:
+                    if len(book.author[i].bio)>=len(book.author[j].bio):
+                        author_bio = book.author[i].bio
+                    else:
+                        author_bio = book.author[j].bio
+                    if len(book.author[i].photo)>=len(book.author[j].photo):
+                        author_image = book.author[i].photo
+                    else:
+                        author_image = book.author[j].photo
+                    a = Author(author_image,author_bio,book.author[i].name)
+                    if len(book.author[i].personal_website)>=len(book.author[j].personal_website):
+                        a.personal_website = book.author[i].personal_website
+                    else:
+                        a.personal_website = book.author[j].personal_website
+                    if len(book.author[i].twitter)>=len(book.author[j].twitter):
+                        a.twitter = book.author[i].twitter
+                    else:
+                        a.twitter = book.author[j].twitter
+                    if len(book.author[i].instagram)>=len(book.author[j].instagram):
+                        a.instagram = book.author[i].instagram
+                    else:
+                        a.instagram = book.author[j].instagram
+                    if len(book.author[i].goodreads_link)>=len(book.author[j].goodreads_link):
+                        a.goodreads_link = book.author[i].goodreads_link
+                    else:
+                        a.goodreads_link = book.author[j].goodreads_link
+                    authors = list(filter(lambda x: x.name not in a.name, authors))
+                    authors.append(a)
+        book.author = authors
     return book
 
 
@@ -268,14 +270,14 @@ def google_books_api(book):
 def get_books_for_the_month(month, year):
     pageNumber = 1
     html = requests.get("https://www.fictiondb.com/newreleases/new-books-by-month.php?date=" + month + "-" + str(
-        year) + "&ltyp=3&genre=Genre&binding=a&otherfilters=n&submitted=TRUE&s=" + str(pageNumber) + "&sort=x")
+        year) + "&ltyp=3&genre=Genre&binding=a&otherfilters=m&submitted=TRUE&s=" + str(pageNumber) + "&sort=x")
     soup = BeautifulSoup(html.content, 'html.parser')
     results = soup.find_all(attrs={'class': 'page-link'})
     pageNumber = int(results.__getitem__(len(results) - 2).get_text())
 
     logger.info(str(datetime.datetime.now()) + " " + month + " " + str(year) + " has " + str(
         pageNumber) + " pages of new releases")
-
+    print("//////////////////////////////////////////"+str(pageNumber)+"//////////////////////////////////////////")
     for i in range(1, pageNumber + 1):
         logger.info(str(datetime.datetime.now()) + " " + "Scraping year and month: " + month + " " + str(year))
         logger.info(str(datetime.datetime.now()) + " " + "Scraping page: " + str(i))
@@ -287,13 +289,13 @@ def get_books_for_the_month(month, year):
         dates = soup.find_all("span",itemprop="datePublished")
 
         logger.info(str(datetime.datetime.now()) + " " + "Scraping of book table complete!")
-        print("//////////////////////////////////////////"+str(len(hrefs))+"//////////////////////////////////////////")
-        for i in range(0,len(hrefs)):
-                print("//////////////////////////////////////////"+str(i)+"//////////////////////////////////////////")
+        print("//////////////////////////////////////////"+str(i)+" "+str(len(hrefs))+"//////////////////////////////////////////")
+        for j in range(0,len(hrefs)):
+                print("//////////////////////////////////////////"+str(j)+"//////////////////////////////////////////")
                 book = Book()
-                isbn = hrefs[i]["href"].split("&")[1].replace("isbn=","")
+                isbn = hrefs[j]["href"].split("&")[1].replace("isbn=","")
                 book.isbn = isbn
-                book.date = dates[i].get_text()
+                book.date = dates[j].get_text()
                 book.goodreads_link = "https://www.goodreads.com/search?utf8=%E2%9C%93&query=" + book.isbn
                 book.amazon_link = "https://www.amazon.com/s?k=" + book.isbn
                 try:
@@ -302,11 +304,12 @@ def get_books_for_the_month(month, year):
                     print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
                     logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
                 book_list.append(book)
-        try:
-            insert_books_into_database()
-        except Exception as e:
-            print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-            logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
+                if (j % 20 == 0) or j == (len(hrefs)-1):
+                    try:
+                        insert_books_into_database()
+                    except Exception as e:
+                        print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
+                        logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
 
 
 
@@ -320,7 +323,6 @@ def insert_books_into_database():
             b._id = (str(b.isbn) + str(b.title) + str(b.date)).replace(" ", "")
             authors = []
             for i in range(0, len(b.author)):
-                print(b.author[i])
                 b.author[i]._id = b.author[i].name
                 authors.append(b.author[i].__dict__)
                 author_final_list.append(b.author[i].__dict__)
@@ -330,8 +332,14 @@ def insert_books_into_database():
         except Exception as e:
             print(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
             logger.error(str(datetime.datetime.now()) + " " + str(e) + "\n" + traceback.format_exc())
-    bookCollection.insert_many(book_final_list)
-    authorCollection.insert_many(author_final_list)
+    try:
+        bookCollection.insert_many(book_final_list, ordered=False)
+    except:
+        pass
+    try:
+        authorCollection.insert_many(author_final_list,ordered=False)
+    except:
+        pass
     book_list.clear()
 
 
@@ -341,9 +349,10 @@ today = datetime.date.today()
 
 year = today.year
 
-months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+# months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+months = ["Mar"]
 
-for y in range(year - 2, year + 2):
+for y in range(2024, 2026):
     for m in months:
         try:
             get_books_for_the_month(m, y)
